@@ -166,7 +166,16 @@ gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(header(banner))
     .pipe(gulp.dest('./dist')))
 
-gulp.task('css', gulp.parallel('css-themes', 'css-core'))
+
+const postcss = require('gulp-postcss')
+gulp.task('css-tailwind', () => gulp.src(['./css/*.css'])
+    .pipe(postcss([
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ]))
+    .pipe(gulp.dest('./dist/')))
+
+gulp.task('css', gulp.parallel('css-themes', 'css-core', 'css-tailwind'))
 
 gulp.task('qunit', () => {
 
@@ -262,7 +271,6 @@ gulp.task('reload', () => gulp.src(['*.html', '*.md'])
     .pipe(connect.reload()));
 
 gulp.task('serve', () => {
-
     connect.server({
         root: root,
         port: port,
@@ -285,6 +293,10 @@ gulp.task('serve', () => {
         'css/*.scss',
         'css/print/*.{sass,scss,css}'
     ], gulp.series('css-core', 'reload'))
+
+    gulp.watch([
+        'css/*.css'
+    ], gulp.series('css-tailwind', 'reload'))
 
     gulp.watch(['test/*.html'], gulp.series('test'))
 
