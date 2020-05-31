@@ -16711,6 +16711,10 @@ h5 {
   font-size: 1.25rem
 }
 
+.vh-40 {
+  height: 40vh;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;

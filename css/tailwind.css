@@ -23,3 +23,7 @@ h4 {
 h5 {
     @apply text-xl
 }
+
+.vh-40 {
+    height: 40vh;
+}
