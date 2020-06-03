@@ -16701,6 +16701,19 @@ html { font-family: 'Inter', sans-serif;
   }
 }
 
+.reveal .progress {
+  --bg-opacity: 1;
+  background-color: #4c51bf;
+  background-color: rgba(76, 81, 191, var(--bg-opacity));
+  height: 0.5rem
+}
+
+.reveal .controls button {
+  --text-opacity: 1;
+  color: #4c51bf;
+  color: rgba(76, 81, 191, var(--text-opacity))
+}
+
 h1 {
   font-size: 4rem
 }
