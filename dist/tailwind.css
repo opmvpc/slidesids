@@ -16691,28 +16691,163 @@ video {
   transition-delay: 1000ms;
 }
 
+@import url('https://rsms.me/inter/inter.css');
+
+html { font-family: 'Inter', sans-serif;
+}
+
+@supports(font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif;
+  }
+}
+
 h1 {
-  font-size: 3rem
+  font-size: 4rem
 }
 
 h2 {
-  font-size: 2.25rem
+  font-size: 3rem;
+  line-height: 1.625
 }
 
 h3 {
-  font-size: 1.875rem
+  font-size: 2.25rem
 }
 
 h4 {
-  font-size: 1.5rem
+  font-size: 1.875rem
 }
 
 h5 {
-  font-size: 1.25rem
+  font-size: 1.5rem
 }
 
-.vh-40 {
-  height: 40vh;
+.slides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+.title {
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  font-weight: 700;
+  margin-bottom: 1.25rem
+}
+
+.vh-80 {
+  height: 80vh;
+}
+
+.bg-transparent {
+  background-color: rgba(127,156,245, 0.3);
+}
+
+.reveal::after {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 70vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c3dafe' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image: -webkit-gradient(
+    linear, right bottom, left top, 
+    color-stop(0.00,  rgba(0,0,0,1)),
+    color-stop(0.35,  rgba(0,0,0,1)),
+    color-stop(0.50,  rgba(0,0,0,0)),
+    color-stop(0.65,  rgba(0,0,0,0)),
+    color-stop(1.00,  rgba(0,0,0,0)));
+}
+
+ul.custom-list {
+  display: flex;
+  flex-direction: column
+}
+
+ul.custom-list > li {
+  display: inline-block;
+  font-size: 1.5rem;
+  --text-opacity: 1;
+  color: #4c51bf;
+  color: rgba(76, 81, 191, var(--text-opacity));
+  font-weight: 700;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: rgba(127,156,245, 0.3);
+}
+
+ol.custom-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: decimal;
+  list-style: none;
+  counter-reset: custom-counter;
+}
+
+ol.custom-list > li {
+  font-size: 1.25rem;
+  --text-opacity: 1;
+  color: #4c51bf;
+  color: rgba(76, 81, 191, var(--text-opacity));
+  font-weight: 700;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  counter-increment: custom-counter;
+  background-color: rgba(127,156,245, 0.3);
+}
+
+ol.custom-list > li > span {
+  position: relative;
+  left: 1.0rem;
+}
+
+ol.custom-list li::before {
+  content: counter(custom-counter);
+  vertical-align: middle;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 1.0rem;
+  padding-left: 1.0rem;
+  margin-left: -6rem;
+  margin-top: -1.5rem;
+  --bg-opacity: 1;
+  background-color: #ebf4ff;
+  background-color: rgba(235, 244, 255, var(--bg-opacity));
+  position: absolute;
+  border-width: 8px;
+  --border-opacity: 1;
+  border-color: #a3bffa;
+  border-color: rgba(163, 191, 250, var(--border-opacity));
+  border-radius: 9999px;
+  font-size: 1.875rem
 }
 
 @media (min-width: 640px) {

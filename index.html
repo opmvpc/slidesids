@@ -8,8 +8,8 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<!-- <link rel="stylesheet" href="dist/theme/black.css" id="theme"> -->
 		<link href="dist/tailwind.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -17,51 +17,93 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section class="container mx-auto">
 					<h2 class="mb-10 font-bold text-gray-800">Université de Namur</h5>
 					<h3 class="mb-10 text-gray-700">Initiation à la démarche scientifique | IHDCB339</h3>
-					<h1 class="inline-block bg-indigo-100 py-8 px-5 rounded-lg shadow-xl text-indigo-800 font-bold border border-solid border-indigo-200">State of the art: A Systematic literature review on visual representation systems for programming paradigms</h3>
+					<h2 class="inline-block bg-transparent py-8 px-5 rounded-lg shadow-xl text-indigo-800 font-bold mb-10">State of the art: A Systematic literature review on visual representation systems for programming paradigms</h2>
+					<h3 class="text-gray-700">2019 - 2020</h3>
 				</section>
 
 				<section>
-					<h2>Auteurs</h2>
-					<h2>Promoteurs</h2>
-				</section>
-
-				<section>
-					<h2>Programming paradigms</h2>
-					<h3>Imperative</h3>
-					<h3>Functional</h3>
-					<h3>Logical</h3>
-					<h3>Object oriented</h3>
-					<h3>Concurrent</h3>
-				</section>
-
-				<section>
-					<h2>Programs representation systems</h2>
-					<h3>Visual programming</h3>
-					<h3>Static representations</h3>
-					<h3>Dynamic representations</h3>
-				</section>
-
-				<section>
-					<h2>Methodology</h2>
-					<h3>SLR</h3>
-					<h3>Research question</h3>
-					<h3>Keywords</h3>
-					<h3>Inclusion & Exclusion criteria</h3>
-					<h3>Query search engines</h3>
-					<h3>Back & forward tracking</h3>
-					<h3>Custom bibliography management tool</h3>
-				</section>
-
-				<section>
-					<h2>Results</h2>
-					<div class="r-stack p-4">
-						<img class="fragment fade-out vh-40" data-fragment-index="0" src="images/citations_clusters.png">
-						<img class="fragment current-visible vh-40" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
-						<img class="fragment vh-40" src="images/countArticlesByCategories.jpg">
+					<h2 class="title">Authors</h2>
+					<div class="flex flex-col items-center
+					text-indigo-700 font-bold italic mb-10">
+						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/tsi.jpg" alt="">
+							<h5 class="w-full ml-8 mr-10">Thibault Six</h5>
+						</div>
+						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/ben.jpg" alt="">
+							<h5 class="w-full ml-8 mr-10">Benjamin Jonard</h5>
+						</div>
 					</div>
+					<h2 class="title">Promoters</h2>
+					<div class="flex flex-col items-center
+					text-indigo-700 font-bold italic mb-10">
+						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/pyschobb-large.jpg" alt="">
+							<h5 class="w-full ml-8 mr-10">Pierre-Yves Schobbens</h5>
+						</div>
+						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/amrani.jfif" alt="">
+							<h5 class="w-full ml-8 mr-10">Moussa Amrani</h5>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="title">Introduction</h2>
+				</section>
+
+				<section>
+					<h2 class="title">Programming paradigms</h2>
+					<ul class="custom-list">
+						<li><i class="fas fa-code-branch text-indigo-500 mr-3"></i> Imperative</li>
+						<li><span class="text-indigo-500 mr-3">&#x3BB;</span>Functional</li>
+						<li><i class="fas fa-brain text-indigo-500 mr-3"></i>Logical</li>
+						<li><i class="fas fa-cube text-indigo-500 mr-3"></i>Object oriented</li>
+						<li><i class="fas fa-align-left text-indigo-500 mr-3"></i>Concurrent</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="title">Programs representation systems</h2>
+					<ul class="custom-list">
+						<li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
+						<li><i class="fas fa-project-diagram text-indigo-500 mr-3"></i> Static representations</li>
+						<li><i class="fas fa-film text-indigo-500 mr-3"></i> Dynamic representations</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="title">Methodology</h2>
+					<ol class="custom-list">
+						<li><span>SLR</span></li>
+						<li><span>Research question</span></li>
+						<li><span>Keywords</span></li>
+						<li><span>Inclusion & Exclusion criteria</span></li>
+						<li><span>Query search engines</span></li>
+						<li><span>Back & forward tracking</span></li>
+						<li><span>Classification</span></li>
+					</ol>
+				</section>
+
+				<section class="container h-full mx-auto">
+					<h2 class="title">Custom bibliography management tool</h2>
+					<iframe class="w-full m-8 shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
+				</section>
+
+				<section>
+					<h2 class="title">Results</h2>
+					<div class="r-stack p-4">
+						<img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
+						<img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
+						<img class="fragment vh-80 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
+					</div>
+				</section>
+
+				<section>
+					<h2 class="title">Tools</h2>
 				</section>
 			</div>
 		</div>
@@ -76,6 +118,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				disableLayout: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
