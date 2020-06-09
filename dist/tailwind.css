@@ -16757,6 +16757,44 @@ section {
   margin-bottom: 1.25rem
 }
 
+.subtitle {
+  --text-opacity: 1;
+  color: #5a67d8;
+  color: rgba(90, 103, 216, var(--text-opacity));
+  font-weight: 700;
+  margin-bottom: 1.25rem
+}
+
+sub {
+  font-size: 1.25rem;
+  font-weight: 700;
+  --text-opacity: 1;
+  color: #4c51bf;
+  color: rgba(76, 81, 191, var(--text-opacity))
+}
+
+sub > span.ref {
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  font-size: 0.875rem;
+  font-weight: 400
+}
+
+pre {
+  width: 66.666667%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem
+}
+
+pre > code {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5rem;
+  text-align: left;
+  padding: 2rem !important;
+}
+
 .vh-80 {
   height: 80vh;
 }
@@ -16774,7 +16812,7 @@ section {
   background-color: white;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c3dafe' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-mask-image: -webkit-gradient(
-    linear, right bottom, left top, 
+    linear, right bottom, left top,
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
     color-stop(0.50,  rgba(0,0,0,0)),

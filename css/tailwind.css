@@ -50,6 +50,27 @@ section {
     @apply text-gray-700 font-bold mb-5
 }
 
+.subtitle {
+    @apply text-indigo-600 font-bold mb-5
+}
+
+sub {
+    @apply text-xl font-bold text-indigo-700
+}
+
+sub > span.ref {
+    @apply text-gray-700 text-sm font-normal
+}
+
+pre {
+    @apply w-2/3 mx-auto mb-2
+}
+
+pre > code {
+    @apply shadow-xl rounded-lg text-left;
+    padding: 2rem !important;
+}
+
 .vh-80 {
     height: 80vh;
 }
@@ -67,7 +88,7 @@ section {
     background-color: white;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c3dafe' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
     -webkit-mask-image: -webkit-gradient(
-    linear, right bottom, left top, 
+    linear, right bottom, left top,
     color-stop(0.00,  rgba(0,0,0,1)),
     color-stop(0.35,  rgba(0,0,0,1)),
     color-stop(0.50,  rgba(0,0,0,0)),
