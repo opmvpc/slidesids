@@ -1,355 +1,365 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link href="dist/tailwind.css" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link href="dist/tailwind.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section class="container mx-auto">
-					<h2 class="mb-10 font-bold text-gray-800">Université de Namur</h5>
-					<h3 class="mb-10 text-gray-700">Initiation à la démarche scientifique | IHDCB339</h3>
-					<h2 class="inline-block bg-transparent py-8 px-5 rounded-lg shadow-xl text-indigo-800 font-bold mb-10">State of the art: A Systematic literature review on visual representation systems for programming paradigms</h2>
-					<h3 class="text-gray-700">2019 - 2020</h3>
-				</section>
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/night-owl.css" id="highlight-theme">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section class="container mx-auto">
+                    <h2 class="mb-10 font-bold text-gray-800">Université de Namur</h5>
+                    <h3 class="mb-10 text-gray-700">Initiation à la démarche scientifique | IHDCB339</h3>
+                    <h2 class="inline-block bg-transparent py-8 px-5 rounded-lg shadow-xl text-indigo-800 font-bold mb-10">State of the art: A Systematic literature review on visual representation systems for programming paradigms</h2>
+                    <h3 class="text-gray-700">2019 - 2020</h3>
+                </section>
 
-				<section>
-					<h2 class="title">Authors</h2>
-					<div class="flex flex-col items-center
-					text-indigo-700 font-bold italic mb-10">
-						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
-							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/tsi.jpg" alt="">
-							<h5 class="w-full ml-8 mr-10">Thibault Six</h5>
-						</div>
-						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
-							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/ben.jpg" alt="">
-							<h5 class="w-full ml-8 mr-10">Benjamin Jonard</h5>
-						</div>
-					</div>
-					<h2 class="title">Promoters</h2>
-					<div class="flex flex-col items-center
-					text-indigo-700 font-bold italic mb-10">
-						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
-							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/pyschobb-large.jpg" alt="">
-							<h5 class="w-full ml-8 mr-10">Pierre-Yves Schobbens</h5>
-						</div>
-						<div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
-							<img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/amrani.jfif" alt="">
-							<h5 class="w-full ml-8 mr-10">Moussa Amrani</h5>
-						</div>
-					</div>
-				</section>
+                <section>
+                    <h2 class="title">Authors</h2>
+                    <div class="flex flex-col items-center
+                    text-indigo-700 font-bold italic mb-10">
+                        <div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+                            <img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/tsi.jpg" alt="">
+                            <h5 class="w-full ml-8 mr-10">Thibault Six</h5>
+                        </div>
+                        <div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+                            <img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/ben.jpg" alt="">
+                            <h5 class="w-full ml-8 mr-10">Benjamin Jonard</h5>
+                        </div>
+                    </div>
+                    <h2 class="title">Promoters</h2>
+                    <div class="flex flex-col items-center
+                    text-indigo-700 font-bold italic mb-10">
+                        <div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+                            <img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/pyschobb-large.jpg" alt="">
+                            <h5 class="w-full ml-8 mr-10">Pierre-Yves Schobbens</h5>
+                        </div>
+                        <div class="h-16 bg-transparent flex items-center my-5 rounded-lg shadow-lg">
+                            <img class="-ml-5 rounded-full border-8 border-indigo-300 h-20 w-20" src="images/amrani.jfif" alt="">
+                            <h5 class="w-full ml-8 mr-10">Moussa Amrani</h5>
+                        </div>
+                    </div>
+                </section>
 
-				<section>
-					<h2 class="title">Introduction</h2>
+                <section>
+                    <h2 class="title">Introduction</h2>
                     <!-- State of the art: A Systematic literature review on visual representation systems for programming paradigms -->
                     <!-- on va d'abord definir les termes au coeur de notre sujet -->
                     <!-- vous présenter notre méthodo -->
                     <!-- les résultats, les pistes de recherches et nos découvertes-->
-				</section>
-
-				<section>
-					<h2 class="title">Programming paradigms</h2>
-                    <!-- Dans un premier temps nous allons définir les paradigmes de progra-->
-					<ul class="custom-list">
-						<li><i class="fas fa-code-branch text-indigo-500 mr-3"></i> Imperative</li>
-						<li><span class="text-indigo-500 mr-3">&#x3BB;</span>Functional</li>
-						<li><i class="fas fa-brain text-indigo-500 mr-3"></i>Logical</li>
-						<li><i class="fas fa-cube text-indigo-500 mr-3"></i>Object oriented</li>
-						<li><i class="fas fa-align-left text-indigo-500 mr-3"></i>Concurrent</li>
-					</ul>
-				</section>
-                
-                <!-- <section> -->
-					<!-- <h2 class="title">Imperative Programming</h2> -->
-					
-                      <!-- <pre class="h-64"><code data-trim data-noescape> -->
-                      <!-- #include<stdio.h> -->
-
-                        <!-- void quicksort(int number[],int first,int last){ -->
-                           <!-- int i, j, pivot, temp; -->
-
-                           <!-- if(first<last){ -->
-                              <!-- pivot=first; -->
-                              <!-- i=first; -->
-                              <!-- j=last; -->
-
-                              <!-- while(i<j){ -->
-                                 <!-- while(number[i]<=number[pivot]&&i<last) -->
-                                    <!-- i++; -->
-                                 <!-- while(number[j]>number[pivot]) -->
-                                    <!-- j--; -->
-                                 <!-- if(i<j){ -->
-                                    <!-- temp=number[i]; -->
-                                    <!-- number[i]=number[j]; -->
-                                    <!-- number[j]=temp; -->
-                                 <!-- } -->
-                              <!-- } -->
-
-                              <!-- temp=number[pivot]; -->
-                              <!-- number[pivot]=number[j]; -->
-                              <!-- number[j]=temp; -->
-                              <!-- quicksort(number,first,j-1); -->
-                              <!-- quicksort(number,j+1,last); -->
-
-                           <!-- } -->
-                        <!-- } -->
-
-                        <!-- int main(){ -->
-                           <!-- int number[] = {7, 4, 34, 0, 12}; -->
-                           <!-- int count = 5; -->
-
-                           <!-- quicksort(number,0,count-1); -->
-
-                           <!-- return 0; -->
-                        <!-- } -->
-                      <!-- </code></pre> -->
-                    
-				<!-- </section> -->
-                
-                <!-- <section> -->
-					<!-- <h2 class="title">Functional Programming</h2> -->
-					
-                      <!-- <pre><code data-trim data-noescape> -->
-                      <!-- let rec qsort list = match list with -->
-                      <!-- [] | _::[] -> list -->
-                    <!-- | pivot::residue -> -->
-                        <!-- let start, end = List.partition (fun a -> a < pivot) residue in -->
-                        <!-- qsort start @ [pivot] @ qsort end -->
-                      <!-- </code></pre> -->
-                    
-				<!-- </section> -->
-                
-                <!-- <section> -->
-					<!-- <h2 class="title">Logical Programming</h2> -->
-					<!-- <pre><code data-trim data-noescape> -->
-                    <!-- quicksort([X|Xs],Ys) :- -->
-                      <!-- partition(Xs,X,Left,Right), -->
-                      <!-- quicksort(Left,Ls), -->
-                      <!-- quicksort(Right,Rs), -->
-                      <!-- append(Ls,[X|Rs],Ys). -->
-                    <!-- quicksort([],[]). -->
-
-                    <!-- partition([X|Xs],Y,[X|Ls],Rs) :- -->
-                      <!-- X <= Y, partition(Xs,Y,Ls,Rs). -->
-                    <!-- partition([X|Xs],Y,Ls,[X|Rs]) :- -->
-                      <!-- X > Y, partition(Xs,Y,Ls,Rs). -->
-                    <!-- partition([],Y,[],[]). -->
-
-                    <!-- append([],Ys,Ys). -->
-                    <!-- append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs). -->
-                      <!-- </code></pre> -->
-				<!-- </section> -->
-                
-                <!-- <section> -->
-					<!-- <h2 class="title">Object Oriented Programming</h2> -->
-					<!-- <pre><code data-trim data-noescape> -->
-                    <!-- public class MyArray { -->
-                        <!-- private int[] arr; -->
-
-                        <!-- public MyArray(int[] arr) { -->
-                            <!-- this.arr = arr; -->
-                        <!-- } -->
-
-                        <!-- public void sort() { -->
-                            <!-- quickSort(0, arr.length-1); -->
-                        <!-- } -->
-
-                        <!-- private void quickSort(int begin, int end) { -->
-                            <!-- if (begin < end) { -->
-                                <!-- int partitionIndex = partition(begin, end); -->
-
-                                <!-- quickSort(begin, partitionIndex-1); -->
-                                <!-- quickSort(partitionIndex+1, end); -->
-                            <!-- } -->
-                        <!-- } -->
-
-                        <!-- private int partition(int begin, int end) { -->
-                            <!-- int pivot = arr[end]; -->
-                            <!-- int i = (begin-1); -->
-
-                            <!-- for (int j = begin; j < end; j++) { -->
-                                <!-- if (arr[j] <= pivot) { -->
-                                    <!-- i++; -->
-                                    <!-- swap(i, j); -->
-                                <!-- } -->
-                            <!-- } -->
-
-                            <!-- swap(i+1, end); -->
-
-                            <!-- return i+1; -->
-                        <!-- } -->
-
-                        <!-- private void swap(int firstIndex, int secondIndex) { -->
-                            <!-- int swapTemp = arr[firstIndex]; -->
-                            <!-- arr[firstIndex] = arr[secondIndex]; -->
-                            <!-- arr[secondIndex] = swapTemp; -->
-                        <!-- } -->
-                    <!-- } -->
-                      <!-- </code></pre> -->
-				<!-- </section> -->
-                
-                <!-- <section> -->
-					<!-- <h2 class="title">Concurrent Programming</h2> -->
-					<!-- <pre><code data-trim data-noescape> -->
-                    <!-- func Cqsort(s []int) { -->
-                        <!-- d := make(chan int) -->
-                        <!-- go cqsort(s, d) -->
-                        <!-- <-d -->
-                        <!-- return -->
-                    <!-- } -->
-
-                    <!-- func cqsort(s []int, done chan int) { -->
-                        <!-- // termination condition -->
-                        <!-- if len(s) <= 1 { -->
-                            <!-- done <- 1 -->
-                            <!-- return -->
-                        <!-- } -->
-                        <!-- // where the work happens -->
-                        <!-- pivotIdx := partition(s) -->
-
-                        <!-- // communication channel -->
-                        <!-- childChan := make(chan int) -->
-                        <!-- go cqsort(s[:pivotIdx+1], childChan) -->
-                        <!-- go cqsort(s[pivotIdx+1:], childChan) -->
-
-                        <!-- // block until both concurrent children finish -->
-                        <!-- for i := 0; i < 2; i++ { -->
-                            <!-- <-childChan -->
-                        <!-- } -->
-                        <!-- // tell our caller we are done -->
-                        <!-- done <- 1 -->
-                        <!-- return -->
-                    <!-- } -->
-                      <!-- </code></pre> -->
-				<!-- </section> -->
-
-				<section>
-					<h2 class="title">Programs representation systems</h2>
-                    <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
-					<ul class="custom-list">
-						<li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
-						<li><i class="fas fa-project-diagram text-indigo-500 mr-3"></i> Static Visualisation</li>
-						<li><i class="fas fa-film text-indigo-500 mr-3"></i> Dynamic Visualisation</li>
-					</ul>
-				</section>
-                
-                <section class="container h-full mx-auto">
-					<h2 class="title">Visual Programming</h2>
-                    <img class="vh-80 shadow-xl rounded-lg" src="images/scratchUI.JPG">
-				</section>
-                
-                <section class="container h-full mx-auto">
-					<h2 class="title">Static Visualisation</h2>
-                    <img class="vh-80 shadow-xl rounded-lg" src="images/logichart.JPG">
-				</section>
-                
-                <section class="container h-full mx-auto">
-					<h2 class="title">Dynamic Visualisation</h2>
-                    <img class="vh-80 shadow-xl rounded-lg" src="images/animation.JPG">
-				</section>
-
-				<section>
-					<h2 class="title">Methodology </h2>
-                    <h3 class="title">SLR</h3>
-					<ol class="custom-list">
-						
-						<li><span>Research question</span></li>
-						<li><span>Keywords</span></li>
-						<li><span>Inclusion & Exclusion criteria</span></li>
-						<li><span>Query search engines</span></li>
-						<li><span>Back & forward tracking</span></li>
-						<li><span>Classification</span></li>
-					</ol>
-				</section>
-
-				<section class="container h-full mx-auto">
-					<h2 class="title">Custom bibliography management tool</h2>
-					<iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
-				</section>
-
-				<section>
-					<h2 class="title">Classification of articles</h2>
-					<div class="r-stack p-4">
-						<img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
-						<img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
-						<img class="fragment vh-80 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
-					</div>
-				</section>
-
-				<section>
-					<h2 class="title">Tools</h2>
-				</section>
-
-				<section>
-					<h2 class="title">Timeline</h2>
-					<div class="r-stack p-4">
-						<img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
-						<img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
-					</div>
-				</section>
-
-				<section>
-					<h2 class="title">Learnings</h2>
-					<ul class="custom-list">
-						<li>Imperative le plus représenté</li>
-						<li>Serious games assez recents</li>
-						<li>...</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 class="title">Future research areas</h2>
-                    <!-- probleme de taille des programmes, functional toujours des diagrammes, representation des paradigmes encore des pistes à explorer... -->
-					<ul class="custom-list">
-						<li>VR</li>
-						<li>Size</li>
-					</ul>
-				</section>
+                </section>
 
                 <section>
-					<h2 class="title">Autocritique</h2>
+                    <h2 class="title">Programming paradigms</h2>
+                    <!-- Dans un premier temps nous allons définir les paradigmes de progra-->
+                    <ul class="custom-list">
+                        <li><i class="fas fa-code-branch text-indigo-500 mr-3"></i> Imperative</li>
+                        <li><span class="text-indigo-500 mr-3">&#x3BB;</span>Functional</li>
+                        <li><i class="fas fa-brain text-indigo-500 mr-3"></i>Logical</li>
+                        <li><i class="fas fa-cube text-indigo-500 mr-3"></i>Object oriented</li>
+                        <li><i class="fas fa-align-left text-indigo-500 mr-3"></i>Concurrent</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="title">Imperative Programming</h2>
+
+                    <pre><code data-trim class="c" data-noescape>
+                        #include&lt;stdio.h&gt;
+
+                        void quicksort(int number[],int first,int last) {
+                            int i, j, pivot, temp;
+
+                            if(first&lt;last) {
+                                pivot=first;
+                                i=first;
+                                j=last;
+
+                                while(i&lt;j) {
+                                    while(number[i]&lt;=number[pivot]&amp;&amp;i&lt;last)
+                                    i++;
+                                    while(number[j]&gt;number[pivot])
+                                    j--;
+                                    if(i&lt;j) {
+                                        temp=number[i]; number[i]=number[j]; number[j]=temp;
+                                    }
+                                }
+
+                                temp=number[pivot];
+                                number[pivot]=number[j];
+                                number[j]=temp;
+                                quicksort(number,first,j-1);
+                                quicksort(number,j+1,last);
+                            }
+                        }
+
+                        int main() {
+                            int number[] = {7, 4, 34, 0, 12};
+                            int count=5;
+                            quicksort(number,0,count-1);
+                            return 0;
+                        }
+                    </code></pre>
+                    <sub>C language</sub>
+                </section>
+
+                <section>
+                    <h2 class="title">Functional Programming</h2>
+
+                    <pre><code data-trim data-noescape>
+                        let rec qsort list = match list with
+                            [] | _::[] -> list
+                        | pivot::residue ->
+                            let start, end = List.partition (fun a -> a < pivot) residue in
+                            qsort start @ [pivot] @ qsort end
+                    </code></pre>
+                    <sub>OCaml language <span class="ref">[http://sdz.tdct.org/sdz/le-tri-rapide-qsort.html]</span></sub>
+                </section>
+
+                <section>
+                    <h2 class="title">Logical Programming</h2>
+                    <pre><code data-trim data-noescape>
+                        quicksort([X|Xs],Ys) :-
+                            partition(Xs,X,Left,Right),
+                            quicksort(Left,Ls),
+                            quicksort(Right,Rs),
+                            append(Ls,[X|Rs],Ys).
+                        quicksort([],[]).
+
+                        partition([X|Xs],Y,[X|Ls],Rs) :-
+                            X <= Y, partition(Xs,Y,Ls,Rs).
+                        partition([X|Xs],Y,Ls,[X|Rs]) :-
+                            X > Y, partition(Xs,Y,Ls,Rs).
+                        partition([],Y,[],[]).
+
+                        append([],Ys,Ys).
+                        append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs).
+                    </code></pre>
+                    <sub>Prolog language <span class="ref">[https://www.cp.eng.chula.ac.th/~prabhas//teaching/dsys/2004/quick-prolog.htm]</span></sub>
+                </section>
+
+                <section>
+                    <h2 class="title">Object Oriented Programming</h2>
+                    <pre><code class="java" data-trim data-noescape>
+                        public class MyArray {
+                            private int[] arr;
+
+                            public MyArray(int[] arr) {
+                                this.arr = arr;
+                            }
+
+                            public void sort() {
+                                quickSort(0, arr.length-1);
+                            }
+
+                            private void quickSort(int begin, int end) {
+                                if (begin < end) {
+                                    int partitionIndex = partition(begin, end);
+
+                                    quickSort(begin, partitionIndex-1);
+                                    quickSort(partitionIndex+1, end);
+                                }
+                            }
+
+                            private int partition(int begin, int end) {
+                                int pivot = arr[end];
+                                int i = (begin-1);
+
+                                for (int j = begin; j < end; j++) {
+                                    if (arr[j] <= pivot) {
+                                        i++;
+                                        swap(i, j);
+                                    }
+                                }
+
+                                swap(i+1, end);
+
+                                return i+1;
+                            }
+
+                            private void swap(int firstIndex, int secondIndex) {
+                                int swapTemp = arr[firstIndex];
+                                arr[firstIndex] = arr[secondIndex];
+                                arr[secondIndex] = swapTemp;
+                            }
+                        }
+                    </code></pre>
+                    <sub>Java language</sub>
+                </section>
+
+                <section>
+                    <h2 class="title">Concurrent Programming</h2>
+                    <pre><code data-trim data-noescape>
+                        func Cqsort(s []int) {
+                            d := make(chan int)
+                            go cqsort(s, d)
+                            <-d
+                            return
+                        }
+
+                        func cqsort(s []int, done chan int) {
+                            // termination condition
+                            if len(s) <= 1 {
+                                done <- 1
+                                return
+                            }
+                            // where the work happens
+                            pivotIdx := partition(s)
+
+                            // communication channel
+                            childChan := make(chan int)
+                            go cqsort(s[:pivotIdx+1], childChan)
+                            go cqsort(s[pivotIdx+1:], childChan)
+
+                            // block until both concurrent children finish
+                            for i := 0; i < 2; i++ {
+                                <-childChan
+                            }
+                            // tell our caller we are done
+                            done <- 1
+                            return
+                        }
+                    </code></pre>
+                    <sub>Go language <span class="ref">[http://azundo.github.io/blog/concurrent-quicksort-in-go/]</span></sub>
+                </section>
+
+                <section>
+                    <h2 class="title">Programs representation systems</h2>
+                    <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
+                    <ul class="custom-list">
+                        <li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
+                        <li><i class="fas fa-project-diagram text-indigo-500 mr-3"></i> Static Visualisation</li>
+                        <li><i class="fas fa-film text-indigo-500 mr-3"></i> Dynamic Visualisation</li>
+                    </ul>
+                </section>
+
+                <section class="container h-full mx-auto">
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex items-center justify-center">
+                        <img class="vh-80 shadow-xl rounded-lg" src="images/scratchUI.JPG">
+                    </div>
+                </section>
+
+                <section class="container h-full mx-auto">
+                    <h2 class="title">Static Visualisation</h2>
+                    <div class="flex items-center justify-center">
+                        <img class="vh-80 shadow-xl rounded-lg" src="images/logichart.JPG">
+                    </div>
+                </section>
+
+                <section class="container h-full mx-auto">
+                    <h2 class="title">Dynamic Visualisation</h2>
+                    <div class="flex items-center justify-center">
+                        <img class="vh-80 shadow-xl rounded-lg" src="images/animation.JPG">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Methodology </h2>
+                    <h3 class="subtitle">Systematic litterature review (SLR)</h3>
+                    <ol class="custom-list">
+
+                        <li><span>Research question</span></li>
+                        <li><span>Keywords</span></li>
+                        <li><span>Inclusion & Exclusion criteria</span></li>
+                        <li><span>Query search engines</span></li>
+                        <li><span>Back & forward tracking</span></li>
+                        <li><span>Classification</span></li>
+                    </ol>
+                </section>
+
+                <section class="container h-full mx-auto">
+                    <h2 class="title">Custom bibliography management tool</h2>
+                    <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
+                </section>
+
+                <section>
+                    <h2 class="title">Classification</h2>
+                    <div class="r-stack p-4">
+                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
+                        <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
+                        <img class="fragment vh-80 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Tools</h2>
+                </section>
+
+                <section>
+                    <h2 class="title">Timeline</h2>
+                    <div class="r-stack p-4">
+                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
+                        <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Learnings</h2>
+                    <ul class="custom-list">
+                        <li>Imperative le plus représenté</li>
+                        <li>Serious games assez recents</li>
+                        <li>...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="title">Future research areas</h2>
+                    <!-- probleme de taille des programmes, functional toujours des diagrammes, representation des paradigmes encore des pistes à explorer... -->
+                    <ul class="custom-list">
+                        <li>VR</li>
+                        <li>Size</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="title">Autocritique</h2>
                     <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
-				</section>
-                
-				<section>
-					<h2 class="title">Conclusion</h2>
-				</section>
+                    <ul class="custom-list">
+                        <li>Better research methodology</li>
+                        <li>Better keywords definition</li>
+                        <li>More paradigms?</li>
+                        <li>...</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2 class="title">Aknowlegements</h2>
-				</section>
-                
-                
-			</div>
-		</div>
+                <section>
+                    <h2 class="title">Conclusion</h2>
+                </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				disableLayout: true,
+                <section>
+                    <h2 class="title">Aknowlegements</h2>
+                </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                disableLayout: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
 </html>
