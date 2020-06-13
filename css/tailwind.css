@@ -75,6 +75,10 @@ pre > code {
     height: 80vh;
 }
 
+.vh-70 {
+    height: 70vh;
+}
+
 .bg-transparent {
     background-color: rgba(127,156,245, 0.3);
 }
