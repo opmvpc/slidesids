@@ -302,6 +302,15 @@
 
                         <!-- BEN -->
                         <li><span>Query search engines</span></li>
+                        <!-- 
+                            Search Engines:
+                                - ieeexplore
+                                - springer
+                                - sciencedirect
+                                - researchgate
+                                - ACM
+                                - Google Scholar
+                        -->
                         <!-- Recherche préliminaire pour mieux comprendre le sujet -->
                         <!-- On a fait une première lecture partielle de ces articles -->
                         <!-- Nouveaux mots-clé -->
@@ -323,16 +332,35 @@
 
                 <!-- BEN -->
                 <section>
-                    <h2 class="title">Classification</h2>
-                    <div class="r-stack p-4">
-                        <!-- Todo nombre par pertinence -->
-                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
-                        <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
-                        <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
-                        <img class="fragment current-visible vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
-                        <img class="fragment vh-70 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification</h2>
+                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByRelevance.jpg">
                     </div>
                 </section>
+
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification</h2>
+                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
+                        <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
+                            <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification</h2>
+                        <img class=" vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification</h2>
+                        <img class=" vh-70 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
+                    </div>
+                </section>
+
 
                 
                 <!-- BEN -->
@@ -346,6 +374,32 @@
                 
                 <!-- THIB -->
                 <!-- block based -->
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/showandtell.jpg">
+                        <sub class="mt-10">(1985) Show and Tell: A visual language for keyboardless programming</sub>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/visavis.jpg">
+                        <!-- Quicksort -->
+                        <sub class="mt-10">(1993) VisaVis: a higher-order functional visual programming language</sub>
+                    </div>
+                </section>
+
+                <!-- UML like -->
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/sfcUI.jpg">
+                        <sub class="mt-10">(1996) The SFC editor a graphical tool for algorithm development</sub>
+                    </div>
+                </section>
+
                 <section>
                     <h2 class="title">Visual Programming</h2>
                     <div class="flex flex-col items-center justify-center">
@@ -370,15 +424,16 @@
                     </div>
                 </section>
 
-                <!-- UML like -->
                 <section>
                     <h2 class="title">Visual Programming</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/sfcUI.jpg">
-                        <sub class="mt-10">(1996) The SFC editor a graphical tool for algorithm development</sub>
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/trikstrudio.jpg">
+                        <sub class="mt-10">(2017) TRIK studio: Technical introduction</sub>
                     </div>
                 </section>
 
+
+                
                 <!-- BEN -->
                 <section>
                     <h2 class="title">Static Visualization</h2>
@@ -416,7 +471,9 @@
                 </section>
                                 
 
-                <!-- THIB -->
+
+
+                <!-- BEN -->
                 <!-- animation interactivite -->
                 <!-- variables -->
                 <section>
@@ -453,7 +510,7 @@
                     </div>
                 </section>
                 
-                <!-- BEN -->
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Timeline</h2>
                     <div class="r-stack p-4">
@@ -470,10 +527,32 @@
                     </div>
                 </section>
 
-                <!-- THIB -->
-                <!-- Todo reprensentations par paradigmes -->
-
                 <!-- BEN -->
+                <section class="container w-full mx-auto">
+                    <h2 class="title">Programming paradigms representations</h2>
+                    <div class="mt-12 flex w-1/2 mx-auto py-8 border-b-2 border-gray-500 text-left">
+                        <div class="w-1/3 text-2xl text-indigo-700 font-bold">Imperative</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-xl">Flow Charts, Visual block based langages</div>
+                    </div>
+                    <div class="flex w-1/2 mx-auto py-8 border-b-2 border-gray-500 text-left">
+                        <div class="w-1/3 text-2xl text-indigo-700 font-bold">Functionnal</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-xl">Data flow diagrams, Visual block based langages</div>
+                    </div>
+                    <div class="flex w-1/2 mx-auto py-8 border-b-2 border-gray-500 text-left">
+                        <div class="w-1/3 text-2xl text-indigo-700 font-bold">Logical</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-xl">Decision three, Venn / Euler diagram</div>
+                    </div>
+                    <div class="flex w-1/2 mx-auto py-8 border-b-2 border-gray-500 text-left">
+                        <div class="w-1/3 text-2xl text-indigo-700 font-bold">Object Oriented</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-xl">UML class,  objects and sequence diagrams</div>
+                    </div>
+                    <div class="flex w-1/2 mx-auto py-8 border-b-2 border-gray-500 text-left">
+                        <div class="w-1/3 text-2xl text-indigo-700 font-bold">Concurrent</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-xl">Data flow diagrams, robots simulations</div>
+                    </div>
+                </section>
+
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Programming paradigms</h3>
@@ -487,7 +566,7 @@
                     </ul>
                 </section>
 
-                <!-- THIB -->
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Program representation systems</h3>
@@ -508,15 +587,24 @@
                     </ul>
                 </section>
 
-                <!-- BEN -->
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Self-criticism</h2>
                     <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
                     <ul class="custom-list">
                         <li>Better research methodology</li>
+                        <!-- S'inspirer de bons articles qu'on a trouvé qu'à la fin -->
                         <li>Better keywords definition</li>
+                        <!-- On était limité par nos connaissances, on ferait beaucoup si c'était à refaire -->
+                        <li>Lack of logical operators in queries</li>
+                        <!-- On a pas personnellement l'habitude de les utiliser -->
                         <li>Expand to more programming paradigms</li>
+                        <!-- Parralel, Programmation événementielle,  -->
                         <li>Analyse more tools</li>
+                        <li>Highlighting key tools features</li>
+                        <!-- On a fait le choix de rester dans l'overview -->
+                        <li>Grey literature</li>
+                        <!-- Pour trouver plus de serious games -->
                     </ul>
                 </section>
 
@@ -527,7 +615,7 @@
                     </ul>
                 </section> -->
 
-                <!-- THIB -->
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Conclusion</h2>
                     <!-- TODO voir conclusion pdf -->
