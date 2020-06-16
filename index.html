@@ -51,14 +51,25 @@
                     </div>
                 </section>
 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Introduction</h2>
                     <!-- State of the art: A Systematic literature review on visual representation systems for programming paradigms -->
-                    <!-- on va d'abord definir les termes au coeur de notre sujet -->
-                    <!-- vous présenter notre méthodo -->
-                    <!-- les résultats, les pistes de recherches et nos découvertes-->
+                    <ol class="custom-list">
+                        <li><span>Definitions</span></li>
+                        <!-- on va d'abord definir les termes au coeur de notre sujet -->
+                        <li><span>Methodology</span></li>
+                        <!-- vous présenter notre méthodo -->
+                        <li><span>Tools presentation</span></li>
+                        <!-- Vous présenter quelques outils -->
+                        <li><span>Learnings</span></li>
+                        <!-- les résultats, les pistes de recherches et nos découvertes-->
+                        <li><span>Future research areas</span></li>
+                        <li><span>Conclusion</span></li>
+                    </ol>
                 </section>
 
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Programming paradigms</h2>
                     <!-- Dans un premier temps nous allons définir les paradigmes de progra-->
@@ -233,6 +244,7 @@
                     <sub>Go language <span class="ref">[http://azundo.github.io/blog/concurrent-quicksort-in-go/]</span></sub>
                 </section>
 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Programs representation systems</h2>
                     <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
@@ -264,11 +276,21 @@
                     </div>
                 </section>
 
+                <!-- BEN -->
+                <section>
+                    <h2 class="title">Audience</h2>
+                    <ul class="custom-list">
+                        <li><i class="fas fa-child text-indigo-500 mr-3"></i> Pupils</li>
+                        <li><i class="fas fa-user-graduate text-indigo-500 mr-3"></i> Students</li>
+                        <li><i class="fas fa-keyboard text-indigo-500 mr-3"></i> Programmers</li>
+                    </ul>
+                </section>
+
                 <section>
                     <h2 class="title">Methodology </h2>
                     <h3 class="subtitle">Systematic litterature review (SLR)</h3>
                     <ol class="custom-list">
-
+                        <!-- THIB -->
                         <li><span>Research question</span></li>
                         <!-- Nous sommes partis de plusieurs questions pour finalement nous concentrer sur celle-ci. Elle nous semble intéressante car nous n'avons pas trouvé de publications proposant notre approche. -->
                         <li><span>Keywords</span></li>
@@ -276,25 +298,34 @@
                         <li><span>Inclusion & Exclusion criteria</span></li>
                         <!-- Inclusion: Par exemple, est-ce que l'article propose un environnement visuel de programmation, un système de réprésentation graphique -->
                         <!-- Exclusion: Est-ce que l'article seulement un abstract, il est dans une autre langue que l'anglais -->
+
+
+                        <!-- BEN -->
                         <li><span>Query search engines</span></li>
                         <!-- Recherche préliminaire pour mieux comprendre le sujet -->
+                        <!-- On a fait une première lecture partielle de ces articles -->
                         <!-- Nouveaux mots-clé -->
+                        <!-- Recherche grandeur nature -->
                         <li><span>Back & forward tracking</span></li>
                         <!-- On est parti des articles trouvés durant les recherches par mots-clés -->
+                        <!-- Trouver les citations et références de ces articles -->
                         <li><span>Articles relevance & classification</span></li>
                         <!-- En fonction de nos critères, nous n'avons gardé que les meilleurs articles. Ensuite nous les avons classés en fonction des paradigmes de programmation qu'ils illustrent ou des systèmes de représentation de programmes utilisés -->
                     </ol>
                 </section>
 
+                <!-- THIB -->
                 <section class="container h-full mx-auto">
                     <h2 class="title">Custom bibliography management tool</h2>
                     <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Elle nous a permis d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Nous avons aussi généré des graphes en utilisant les données recuillies -->
                     <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
                 </section>
 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Classification</h2>
                     <div class="r-stack p-4">
+                        <!-- Todo nombre par pertinence -->
                         <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
                         <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
                         <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
@@ -303,6 +334,8 @@
                     </div>
                 </section>
 
+                
+                <!-- BEN -->
                 <section class="container h-full mx-auto">
                     <h2 class="title">Tools</h2>
                     <div class="flex items-center justify-center">
@@ -310,6 +343,8 @@
                     </div>
                 </section>
                 
+                
+                <!-- THIB -->
                 <!-- block based -->
                 <section>
                     <h2 class="title">Visual Programming</h2>
@@ -344,6 +379,7 @@
                     </div>
                 </section>
 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Static Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
@@ -379,6 +415,8 @@
                     </div>
                 </section>
                                 
+
+                <!-- THIB -->
                 <!-- animation interactivite -->
                 <!-- variables -->
                 <section>
@@ -407,15 +445,6 @@
                     </div>
                 </section>
 
-                <!-- interactive graph -->
-                <section>
-                    <h2 class="title">Dynamic Visualization</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="w-1/2 shadow-xl rounded-lg" src="images/d3BezierTuto.jpg">
-                        <sub class="mt-10">(2015) D3 Data-Driven Documents</sub>
-                    </div>
-                </section>
-
                 <section>
                     <h2 class="title">Dynamic Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
@@ -424,36 +453,27 @@
                     </div>
                 </section>
                 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Timeline</h2>
                     <div class="r-stack p-4">
                         <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
+                        <!-- Imperative most represented -->
+                        <!-- Object Oriented was trendy in the 90's -->
+                        <!-- Logical programming was trendy in the late 80's -->
                         <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
+                        <!-- Static visual programs representations still studied today -->
+                        <!-- Performance concerns seem to be largely resolved since the 90's -->
+                        <!-- Visual programming has regain some interest lately -->
+                        <!-- Serious games are a relatively new trend -->
+                        <!-- Increasingly frequent use of web technologies -->
                     </div>
                 </section>
 
-                <section>
-                    <h2 class="title">Learnings</h2>
-                    <h3 class="subtitle">Programming paradigms</h3>
-                    <ul class="custom-list">
-                        <li>Imperative most represented</li>
-                        <li>Object Oriented was trendy in the 90's</li>
-                        <li>Logical programming was trendy in the late 80's</li>
-                    </ul>
-                </section>
+                <!-- THIB -->
+                <!-- Todo reprensentations par paradigmes -->
 
-                <section>
-                    <h2 class="title">Learnings</h2>
-                    <h3 class="subtitle">Program representation systems</h3>
-                    <ul class="custom-list">
-                        <li>Static visual programs representations still studied today</li>
-                        <li>Performance concerns seem to be largely resolved since the 90's</li>
-                        <li>Visual programming has regain some interest lately</li>
-                        <li>Serious games are a relatively new trend</li>
-                        <li>Increasingly frequent use of web technologies</li>
-                    </ul>
-                </section>
-
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Programming paradigms</h3>
@@ -467,6 +487,7 @@
                     </ul>
                 </section>
 
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Program representation systems</h3>
@@ -487,6 +508,7 @@
                     </ul>
                 </section>
 
+                <!-- BEN -->
                 <section>
                     <h2 class="title">Self-criticism</h2>
                     <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
@@ -505,14 +527,15 @@
                     </ul>
                 </section> -->
 
+                <!-- THIB -->
                 <section>
                     <h2 class="title">Conclusion</h2>
+                    <!-- TODO voir conclusion pdf -->
                 </section>
 
                 <section>
                     <h2 class="title">Aknowlegements</h2>
                 </section>
-
 
             </div>
         </div>
