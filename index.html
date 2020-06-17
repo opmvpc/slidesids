@@ -73,6 +73,8 @@
                 <section>
                     <h2 class="title">Programming paradigms</h2>
                     <!-- Dans un premier temps nous allons définir les paradigmes de progra-->
+                    <!-- Les paradigmes de programmation sont des facons d'écrire des programmes de facon expressive ou de les organiser. En général, pour qu'un langage de programmation soit utilisable, il permet d'utiliser au moins deux paradigmes. -->
+                    <!-- Nous avons basé sur la litterature pour définir notre système de classification -->
                     <ul class="custom-list">
                         <li><i class="fas fa-code-branch text-indigo-500 mr-3"></i> Imperative</li>
                         <li><span class="text-indigo-500 mr-3">&#x3BB;</span>Functional</li>
@@ -85,6 +87,8 @@
                 <section>
                     <h2 class="title">Imperative Programming</h2>
 
+                        <!-- Ce sont des langages qui expriment la logique d'un programme en décrivant les controles de flux à l'aide de construction comme les alternatives et les itérations. Leur sémantique exprime la facon dont les programmes sont exécutés par les ordinateurs. -->
+                        
                     <pre><code data-trim class="c" data-noescape>
                         #include&lt;stdio.h&gt;
 
@@ -127,6 +131,8 @@
                 <section>
                     <h2 class="title">Functional Programming</h2>
 
+                        <!-- Les langages fonctionnels font partie des langages dits déclaratif. Ces langages expriment la logique d'un programme sans en décrire les controlles de flux. La programmation fonctionnel se différencie des autres paradigmes par le fait qu'elle offre une place centrale aux fonctions, qui peuvent etre utiliséees comme n'importe quel autre type de données. -->
+                        
                     <pre><code data-trim data-noescape>
                         let rec qsort list = match list with
                             [] | _::[] -> list
@@ -139,6 +145,9 @@
 
                 <section>
                     <h2 class="title">Logical Programming</h2>
+
+                        <!-- Ce sont aussi des langages déclaratif. Ils permettent de décrire l'intention de programmeur plutot que la facon dont doit etre résolu un problème par l'ordinateur. Pour cela, le programmes décrivent une série de faits et de rêgles. Ensuite, on peut poser des questions au systeme qui va inférer un résultat sur la base des faits et rêgles précédemment déterminés. -->
+                        
                     <pre><code data-trim data-noescape>
                         quicksort([X|Xs],Ys) :-
                             partition(Xs,X,Left,Right),
@@ -161,6 +170,10 @@
 
                 <section>
                     <h2 class="title">Object Oriented Programming</h2>
+
+                        <!-- La programmation OO permets d'organiser les structures de données et les procédures de calculs d'un programme sous forme de classes et leurs concrétisations que sont les objets. Les objets sont des abstractions de concepts du monde réel. Il permet de simplifier la maintenance des programmes et la réutilisation du code grace a des mécanismes tels que l'héritage et le polymorphisme. -->
+                        <!-- Le paradigme orienté objet peut etre ajouté à des langages précédemment existants. C'est le cas par exemple de object Pascal. -->
+                        
                     <pre><code class="java" data-trim data-noescape>
                         public class MyArray {
                             private int[] arr;
@@ -210,6 +223,9 @@
 
                 <section>
                     <h2 class="title">Concurrent Programming</h2>
+
+                        <!-- La programmation concurrent permet de tirer avantage des threads et processeurs multi-coeurs. Il permet d'exécuter plusieurs opérations en même temps de facon non bloquante. Il permet aussi de ce fait d'améliorer le temps d'exécution de certains algorithme. Ce paradigme peut être intégré avec d'autres paradigmes de programmation. C'est le cas par exemple de ParLog pour le langage logique ProLog.-->
+
                     <pre><code data-trim data-noescape>
                         func Cqsort(s []int) {
                             d := make(chan int)
@@ -292,12 +308,12 @@
                     <ol class="custom-list">
                         <!-- THIB -->
                         <li><span>Research question</span></li>
-                        <!-- Nous sommes partis de plusieurs questions pour finalement nous concentrer sur celle-ci. Elle nous semble intéressante car nous n'avons pas trouvé de publications proposant notre approche. -->
+                        <!-- Nous sommes partis de plusieurs questions pour finalement choisir celle-ci, càd "Quels sont les différentes focon de représenter les paradigmes de programmation dans la litterature au cours du temps". Elle nous semble intéressante car nous n'avons pas trouvé de publications proposant notre approche. -->
                         <li><span>Keywords</span></li>
-                        <!-- Nous avons déterminé quelques keywords en partant de nos connaissance, càd scratch. -->
+                        <!-- Nous avons déterminé quelques keywords en partant de nos connaissance, càd l'outil de programmation visuelle Scratch et les langages de programmations spécifiques à un domaine. -->
                         <li><span>Inclusion & Exclusion criteria</span></li>
-                        <!-- Inclusion: Par exemple, est-ce que l'article propose un environnement visuel de programmation, un système de réprésentation graphique -->
-                        <!-- Exclusion: Est-ce que l'article seulement un abstract, il est dans une autre langue que l'anglais -->
+                        <!-- Inclusion: Par exemple, est-ce que l'article propose un environnement visuel de programmation, un système de réprésentation graphique, un système de représentation animée de l'exécution du code d'un programme. -->
+                        <!-- Exclusion: Est-ce que l'article seulement un abstract, s'il est écrit dans une autre langue que l'anglais, s'il ne fait que discuter de l'efficacité de l'utilisation des représentation graphiques dans l'apprentissage de la programmation.-->
 
 
                         <!-- BEN -->
@@ -326,7 +342,7 @@
                 <!-- THIB -->
                 <section class="container h-full mx-auto">
                     <h2 class="title">Custom bibliography management tool</h2>
-                    <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Elle nous a permis d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Nous avons aussi généré des graphes en utilisant les données recuillies -->
+                    <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Cet outil est une application web qui permet de manipuler une base de données. Il permet d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Il nous permet aussi de stocker les pdfs des articles et d'exporter notre bibliographie au format bibtex. Avoir le controlle sur les données des articles nous a parmis de faire quelques statistiques et des graphiques. -->
                     <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
                 </section>
 
@@ -373,12 +389,14 @@
                 
                 
                 <!-- THIB -->
-                <!-- block based -->
                 <section>
                     <h2 class="title">Visual Programming</h2>
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/showandtell.jpg">
                         <sub class="mt-10">(1985) Show and Tell: A visual language for keyboardless programming</sub>
+                        <!-- Show and tell permet de créer des programmes avec un éditeur visuel. Il s'appuie sur les diagrammes de flux de données pour représenter les paradigmes de programmation impérative et concurrente.
+                        Ici calcul d'interet pour de l'argent placé sur un compte en banque
+                        Tous les publics -->
                     </div>
                 </section>
 
@@ -386,8 +404,10 @@
                     <h2 class="title">Visual Programming</h2>
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/visavis.jpg">
-                        <!-- Quicksort -->
                         <sub class="mt-10">(1993) VisaVis: a higher-order functional visual programming language</sub>
+                        <!-- VisaVis est un outil destiné à la programmation fonctionnelle. Il offre un éditeur graphique s'appuyant lui aussi sur les diagrammes de flux de données. -->
+                        <!-- Ici exemple d'implémentation du tri rapide -->
+                        <!-- Enfants et étudiants -->
                     </div>
                 </section>
 
@@ -397,6 +417,9 @@
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/sfcUI.jpg">
                         <sub class="mt-10">(1996) The SFC editor a graphical tool for algorithm development</sub>
+                        <!-- Permet d'écrire des programmmes visuellement sous forme de flow charts. Du code C est généré sur base de ceux-ci -->
+                        <!-- Exemple ici de l'implémentation d'un algorithme d'insertion dans une liste chainée -->
+                        <!-- Tous les publics -->
                     </div>
                 </section>
 
@@ -405,6 +428,8 @@
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/logoBlock.jpg">
                         <sub class="mt-10">(1996) LogoBlocks: A graphical programming language for interacting with the world</sub>
+                        <!-- logoBlock est le premier langage visuel à base de blocs. Les blocs ont des formes différentes en focntion de leur type (variable, fonction, itération) et des connecteurs qui permette de contrainte l'assemblage de certains blocks avec d'autres blocs. -->
+                        <!-- Destiné aux enfants -->
                     </div>
                 </section>
 
@@ -413,6 +438,7 @@
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/scratchUI.jpg">
                         <sub class="mt-10">(2006) The scratch programming language and environment</sub>
+                        <!-- Scratch offre un langage a base de block qui permet de créer des scènes animées ou même des jeux. Il est principalement utilisé pour apprendre la programmation aux enfants et aux étudiants -->
                     </div>
                 </section>
 
@@ -421,6 +447,7 @@
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/snapBlockEditor.jpg">
                         <sub class="mt-10">(2016) Snap! (build your own blocks)</sub>
+                        <!-- C'est une réimplémentation de scratch qui ajoute la possibilité d'ajouter soi meme des nouveaux blocs à l'éditeur -->
                     </div>
                 </section>
 
@@ -429,6 +456,8 @@
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/trikstrudio.jpg">
                         <sub class="mt-10">(2017) TRIK studio: Technical introduction</sub>
+                        <!-- Trik studio permet de programmer des robots à l'aide d'un langage de programmation visuel ou textuel. Il est adapté à l'apprentissage de la programmation concurrente. Il fourni aussi un environment de simulation de robots. -->
+                        <!-- Étudiants et programmeurs -->
                     </div>
                 </section>
 
@@ -519,11 +548,11 @@
                         <!-- Object Oriented was trendy in the 90's -->
                         <!-- Logical programming was trendy in the late 80's -->
                         <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
-                        <!-- Static visual programs representations still studied today -->
-                        <!-- Performance concerns seem to be largely resolved since the 90's -->
-                        <!-- Visual programming has regain some interest lately -->
-                        <!-- Serious games are a relatively new trend -->
-                        <!-- Increasingly frequent use of web technologies -->
+                        Static visual programs representations still studied today
+                        Performance concerns seem to be largely resolved since the 90's
+                        Visual programming has regain some interest lately
+                        Serious games are a relatively new trend
+                        Increasingly frequent use of web technologies
                     </div>
                 </section>
 
@@ -556,13 +585,14 @@
                 <section>
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Programming paradigms</h3>
-                    <ul class="custom-list">
+                    <ul class="custom-list mt-12">
+                        <li>Some are underrepresented</li>
                         <li>Room for new representation systems</li>
                         <!-- Les mêmes systèmes de représentation sont souvent utilisés -->
                         <!-- ex: UML pour OO, decision threes pour Logique -->
                         <!-- Ces représentations ne sont sans doute pas adaptées aux débutants, besoin d'apprendre à lire les diagrammes d'abord -->
                         <li>Lack of multi-textual langages and multi-paradigm tools</li>
-                        <li>No visual tools to learn testing</li>
+                        <li>No visual tools to teach testing</li>
                     </ul>
                 </section>
 
@@ -571,10 +601,12 @@
                     <h2 class="title">Future research areas</h2>
                     <h3 class="subtitle">Program representation systems</h3>
                     <!-- probleme de taille des programmes, functional toujours des diagrammes, representation des paradigmes encore des pistes à explorer... -->
-                    <ul class="custom-list">
+                    <ul class="custom-list mt-12">
                         <li>Screen size is limited</li>
                         <!-- problèmes pour les block based programming langages -->
                         <!-- Difficulté pour représenter des gros programmes -->
+                        <li>Visual languages extension</li>
+                        <!-- Les langages visuels sont rarement concu pour que les utilisateurs puissent ajouter de nouvelles fonctionnalités (par exemple des nouveaux blocs) -->
                         <li>Still some performance concerns</li>
                         <!-- Problèmes quand on génère des graphes contenant beaucoup d'artéfacts -->
                         <li>3D representations</li>
@@ -590,11 +622,11 @@
                 <!-- THIB -->
                 <section>
                     <h2 class="title">Self-criticism</h2>
-                    <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
                     <ul class="custom-list">
                         <li>Better research methodology</li>
-                        <!-- S'inspirer de bons articles qu'on a trouvé qu'à la fin -->
+                        <!-- S'inspirer des états de l'art bien réalisés qu'on a trouvé qu'à la fin -->
                         <li>Better keywords definition</li>
+                        <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
                         <!-- On était limité par nos connaissances, on ferait beaucoup si c'était à refaire -->
                         <li>Lack of logical operators in queries</li>
                         <!-- On a pas personnellement l'habitude de les utiliser -->
@@ -607,13 +639,6 @@
                         <!-- Pour trouver plus de serious games -->
                     </ul>
                 </section>
-
-                <!-- <section>
-                    <h2 class="title">Future works</h2>
-                    <ul class="custom-list">
-                        <li>Better research methodology</li>
-                    </ul>
-                </section> -->
 
                 <!-- BEN -->
                 <section>
