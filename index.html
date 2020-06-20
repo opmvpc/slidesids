@@ -56,25 +56,392 @@
                     <h2 class="title">Introduction</h2>
                     <!-- State of the art: A Systematic literature review on visual representation systems for programming paradigms -->
                     <ol class="custom-list">
-                        <li><span>Definitions</span></li>
                         <!-- on va d'abord definir les termes au coeur de notre sujet -->
                         <li><span>Methodology</span></li>
+                        <li><span>Classification</span></li>
                         <!-- vous présenter notre méthodo -->
                         <li><span>Tools presentation</span></li>
                         <!-- Vous présenter quelques outils -->
-                        <li><span>Learnings</span></li>
+                        <li><span>Timeline</span></li>
                         <!-- les résultats, les pistes de recherches et nos découvertes-->
                         <li><span>Future research areas</span></li>
                         <li><span>Conclusion</span></li>
                     </ol>
                 </section>
 
+                <section>
+                    <h2 class="title">Methodology </h2>
+                    <h3 class="subtitle">Systematic litterature review (SLR)</h3>
+                    <ol class="custom-list">
+                        <!-- THIB -->
+                        <li><span>Research question</span></li>
+                        <li><span>Inclusion & Exclusion criteria</span></li>
+                        <li><span>Keywords</span></li>
+                        <!-- BEN -->
+                        <li><span>Query search engines</span></li>
+                        <li><span>Snowballing</span></li>
+                        <li><span>Relevance & classification</span></li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2 class="title">Research question</h2>
+
+                    <ul class="text-3xl w-1/2 mx-auto text-gray-600 italic mt-20">
+                        <li class="biffer mb-12 leading-10">"How to implement the management of several programming languages in a programming learning game?"</li>
+                        <li class="biffer mb-12 leading-10">"What techniques are used for the graphical representation of the different programming paradigms?"</li>
+                        <li class="biffer mb-16 leading-10">"How to interface between the interpreter of the different source programming languages and the graphical execution environment?"</li>
+                        <li class="text-indigo-700 leading-10 text-4xl">"What are the visual and animated representations of programming paradigms in the literature over time?"</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="title">Inclusion & Exclusion criteria</h2>
+                    <ul class="text-3xl w-1/2 mx-auto mt-20">
+                        <li class="mb-12 leading-10 text-green-500"><span class="normal-case">✅</span> Does the article propose a system of static or animated graphic representation of a program execution?</li>
+                        <li class="mb-12 leading-10 text-green-500"><span class="normal-case">✅</span> Does the article propose a graphical representation system linked to one or more programming paradigms?</li>
+                        <li class="mb-12 leading-10 text-green-500"><span class="normal-case">✅</span> Does the article provide a visual programming environment?</li>
+                        <li class="mb-24 leading-10 text-green-500"><span class="normal-case">✅</span> Does the article offer an educational game for learning programming?</li>
+                        <li class="mb-12 leading-10 text-red-500"><span class="normal-case">❌</span> Article containing only an abstract.</li>
+                        <li class="mb-12 leading-10 text-red-500"><span class="normal-case">❌</span> Article written in a language other than English.</li>
+                        <li class="mb-12 leading-10 text-red-500"><span class="normal-case">❌</span> Article discussing the effectiveness of using graphical representation in learning programming.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2 class="title">Keywords</h2>
+                    <h3 class="subtitle">First set of keywords</h3>
+                    <div class="w-1/2 flex flex-col mx-auto mt-12">
+                        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+                            <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                                <table class="min-w-full">
+                                    <thead class="bg-gray-300">
+                                        <tr>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-lg leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                                                Keyword
+                                            </th>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-lg leading-8 font-bold text-gray-600 uppercase tracking-wider">
+                                                Results count
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                graphical domain specific langage
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Graphical Animated DSL
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                graphical language
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Learning From Scratch
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Learn Programming Using Robots
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Unembedding DSL
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Dsl for robots
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                DSL review
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                DSL animation
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                4
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                scratch programming language
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                5
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Keywords</h2>
+                    <h3 class="subtitle">Second set of keywords</h3>
+                    <div class="w-1/2 flex flex-col mx-auto mt-12">
+                        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+                            <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                                <table class="min-w-full">
+                                    <thead class="bg-gray-300">
+                                        <tr>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-lg leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                                                Keyword
+                                            </th>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-lg leading-8 font-bold text-gray-600 uppercase tracking-wider">
+                                                Results count
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Visual programming languages learning
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Visual programming languages DSL
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Primary education programming
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Serious games learning teaching programming
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Teaching System to learn programming
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Graphical DSL models
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Generation of Graphical Modeling environment
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                visual programming environment Block Bases
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Primary education programming languages DSL
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                introductory programming teaching learning
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Programming Environment teaching learning
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                Visual programming languages
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                visual programming environment teaching learning
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                33
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Query search engines</h2>
+                    <div class="w-1/2 flex flex-col mx-auto mt-12">
+                        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+                            <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                                <table class="min-w-full">
+                                    <thead class="bg-gray-300">
+                                        <tr>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-lg leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                                                Search engine
+                                            </th>
+                                            <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-lg leading-8 font-bold text-gray-600 uppercase tracking-wider">
+                                                Results count
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                bib.cnrs
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                citeseer
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                DBLP
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                google
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                3
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                ieeexplore
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                3
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                IET
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                3
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                springer
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                10
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                sciencedirect
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                24
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 font-medium text-gray-900 text-left">
+                                                researchgate
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap text-base leading-6 text-indigo-700 font-bold">
+                                                32
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- THIB -->
                 <section>
-                    <h2 class="title">Programming paradigms</h2>
-                    <!-- Dans un premier temps nous allons définir les paradigmes de progra-->
-                    <!-- Les paradigmes de programmation sont des facons d'écrire des programmes de facon expressive ou de les organiser. En général, pour qu'un langage de programmation soit utilisable, il permet d'utiliser au moins deux paradigmes. -->
-                    <!-- Nous avons basé sur la litterature pour définir notre système de classification -->
+                    <h2 class="title">Classification</h2>
+                    <h3 class="subtitle">Programming paradigms</h3>
                     <ul class="custom-list">
                         <li><i class="fas fa-code-branch text-indigo-500 mr-3"></i> Imperative</li>
                         <li><span class="text-indigo-500 mr-3">&#x3BB;</span>Functional</li>
@@ -84,185 +451,11 @@
                     </ul>
                 </section>
 
-                <section>
-                    <h2 class="title">Imperative Programming</h2>
-
-                        <!-- Ce sont des langages qui expriment la logique d'un programme en décrivant les controles de flux à l'aide de construction comme les alternatives et les itérations. Leur sémantique exprime la facon dont les programmes sont exécutés par les ordinateurs. -->
-                        
-                    <pre><code data-trim class="c" data-noescape>
-                        #include&lt;stdio.h&gt;
-
-                        void quicksort(int number[],int first,int last) {
-                            int i, j, pivot, temp;
-
-                            if(first&lt;last) {
-                                pivot=first;
-                                i=first;
-                                j=last;
-
-                                while(i&lt;j) {
-                                    while(number[i]&lt;=number[pivot]&amp;&amp;i&lt;last)
-                                    i++;
-                                    while(number[j]&gt;number[pivot])
-                                    j--;
-                                    if(i&lt;j) {
-                                        temp=number[i]; number[i]=number[j]; number[j]=temp;
-                                    }
-                                }
-
-                                temp=number[pivot];
-                                number[pivot]=number[j];
-                                number[j]=temp;
-                                quicksort(number,first,j-1);
-                                quicksort(number,j+1,last);
-                            }
-                        }
-
-                        int main() {
-                            int number[] = {7, 4, 34, 0, 12};
-                            int count=5;
-                            quicksort(number,0,count-1);
-                            return 0;
-                        }
-                    </code></pre>
-                    <sub>C language</sub>
-                </section>
-
-                <section>
-                    <h2 class="title">Functional Programming</h2>
-
-                        <!-- Les langages fonctionnels font partie des langages dits déclaratif. Ces langages expriment la logique d'un programme sans en décrire les controlles de flux. La programmation fonctionnel se différencie des autres paradigmes par le fait qu'elle offre une place centrale aux fonctions, qui peuvent etre utiliséees comme n'importe quel autre type de données. -->
-                        
-                    <pre><code data-trim data-noescape>
-                        let rec qsort list = match list with
-                            [] | _::[] -> list
-                        | pivot::residue ->
-                            let start, end = List.partition (fun a -> a < pivot) residue in
-                            qsort start @ [pivot] @ qsort end
-                    </code></pre>
-                    <sub>OCaml language <span class="ref">[http://sdz.tdct.org/sdz/le-tri-rapide-qsort.html]</span></sub>
-                </section>
-
-                <section>
-                    <h2 class="title">Logical Programming</h2>
-
-                        <!-- Ce sont aussi des langages déclaratif. Ils permettent de décrire l'intention de programmeur plutot que la facon dont doit etre résolu un problème par l'ordinateur. Pour cela, le programmes décrivent une série de faits et de rêgles. Ensuite, on peut poser des questions au systeme qui va inférer un résultat sur la base des faits et rêgles précédemment déterminés. -->
-                        
-                    <pre><code data-trim data-noescape>
-                        quicksort([X|Xs],Ys) :-
-                            partition(Xs,X,Left,Right),
-                            quicksort(Left,Ls),
-                            quicksort(Right,Rs),
-                            append(Ls,[X|Rs],Ys).
-                        quicksort([],[]).
-
-                        partition([X|Xs],Y,[X|Ls],Rs) :-
-                            X <= Y, partition(Xs,Y,Ls,Rs).
-                        partition([X|Xs],Y,Ls,[X|Rs]) :-
-                            X > Y, partition(Xs,Y,Ls,Rs).
-                        partition([],Y,[],[]).
-
-                        append([],Ys,Ys).
-                        append([X|Xs],Ys,[X|Zs]) :- append(Xs,Ys,Zs).
-                    </code></pre>
-                    <sub>Prolog language <span class="ref">[https://www.cp.eng.chula.ac.th/~prabhas//teaching/dsys/2004/quick-prolog.htm]</span></sub>
-                </section>
-
-                <section>
-                    <h2 class="title">Object Oriented Programming</h2>
-
-                        <!-- La programmation OO permets d'organiser les structures de données et les procédures de calculs d'un programme sous forme de classes et leurs concrétisations que sont les objets. Les objets sont des abstractions de concepts du monde réel. Il permet de simplifier la maintenance des programmes et la réutilisation du code grace a des mécanismes tels que l'héritage et le polymorphisme. -->
-                        <!-- Le paradigme orienté objet peut etre ajouté à des langages précédemment existants. C'est le cas par exemple de object Pascal. -->
-                        
-                    <pre><code class="java" data-trim data-noescape>
-                        public class MyArray {
-                            private int[] arr;
-
-                            public MyArray(int[] arr) {
-                                this.arr = arr;
-                            }
-
-                            public void sort() {
-                                quickSort(0, arr.length-1);
-                            }
-
-                            private void quickSort(int begin, int end) {
-                                if (begin < end) {
-                                    int partitionIndex = partition(begin, end);
-
-                                    quickSort(begin, partitionIndex-1);
-                                    quickSort(partitionIndex+1, end);
-                                }
-                            }
-
-                            private int partition(int begin, int end) {
-                                int pivot = arr[end];
-                                int i = (begin-1);
-
-                                for (int j = begin; j < end; j++) {
-                                    if (arr[j] <= pivot) {
-                                        i++;
-                                        swap(i, j);
-                                    }
-                                }
-
-                                swap(i+1, end);
-
-                                return i+1;
-                            }
-
-                            private void swap(int firstIndex, int secondIndex) {
-                                int swapTemp = arr[firstIndex];
-                                arr[firstIndex] = arr[secondIndex];
-                                arr[secondIndex] = swapTemp;
-                            }
-                        }
-                    </code></pre>
-                    <sub>Java language</sub>
-                </section>
-
-                <section>
-                    <h2 class="title">Concurrent Programming</h2>
-
-                        <!-- La programmation concurrent permet de tirer avantage des threads et processeurs multi-coeurs. Il permet d'exécuter plusieurs opérations en même temps de facon non bloquante. Il permet aussi de ce fait d'améliorer le temps d'exécution de certains algorithme. Ce paradigme peut être intégré avec d'autres paradigmes de programmation. C'est le cas par exemple de ParLog pour le langage logique ProLog.-->
-
-                    <pre><code data-trim data-noescape>
-                        func Cqsort(s []int) {
-                            d := make(chan int)
-                            go cqsort(s, d)
-                            <-d
-                            return
-                        }
-
-                        func cqsort(s []int, done chan int) {
-                            // termination condition
-                            if len(s) <= 1 {
-                                done <- 1
-                                return
-                            }
-                            // where the work happens
-                            pivotIdx := partition(s)
-
-                            // communication channel
-                            childChan := make(chan int)
-                            go cqsort(s[:pivotIdx+1], childChan)
-                            go cqsort(s[pivotIdx+1:], childChan)
-
-                            // block until both concurrent children finish
-                            for i := 0; i < 2; i++ {
-                                <-childChan
-                            }
-                            // tell our caller we are done
-                            done <- 1
-                            return
-                        }
-                    </code></pre>
-                    <sub>Go language <span class="ref">[http://azundo.github.io/blog/concurrent-quicksort-in-go/]</span></sub>
-                </section>
 
                 <!-- BEN -->
                 <section>
-                    <h2 class="title">Programs representation systems</h2>
+                    <h2 class="title">Classification</h2>
+                    <h3 class="subtitle">Programs representation systems</h3>
                     <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
                     <ul class="custom-list">
                         <li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
@@ -271,79 +464,47 @@
                     </ul>
                 </section>
 
-                <section class="container h-full mx-auto">
+                <section>
                     <h2 class="title">Visual Programming</h2>
-                    <div class="flex items-center justify-center">
-                        <img class="vh-80 shadow-xl rounded-lg" src="images/scratchUI.jpg">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/environnement.png">
+                        <sub class="mt-10">A Programming Environment for Visual Block-Based Domain-Specific Languages</sub>
                     </div>
                 </section>
 
-                <section class="container h-full mx-auto">
+                <section>
+                    <h2 class="title">Serious Games</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/algobot2.jpg">
+                        <sub class="mt-10">Algobot</sub>
+                    </div>
+                </section>
+
+                <section>
                     <h2 class="title">Static Visualisation</h2>
-                    <div class="flex items-center justify-center">
-                        <img class="vh-80 shadow-xl rounded-lg" src="images/logichart.jpg">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="shadow-xl rounded-lg" src="images/monads.png">
+                        <sub class="mt-10">Visual Support for Learning Monads</sub>
                     </div>
                 </section>
 
-                <section class="container h-full mx-auto">
+                <section>
                     <h2 class="title">Dynamic Visualisation</h2>
-                    <div class="flex items-center justify-center">
-                        <img class="vh-80 shadow-xl rounded-lg" src="images/animation.jpg">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/animation.jpg">
+                        <sub class="mt-10">JAVASCRIPT LIBRARY FOR DEVELOPING INTERACTIVE MICRO-LEVEL ANIMATIONS FORTEACHING AND LEARNING ALGORITHMS ON ONE-DIMENSIONAL ARRAYS</sub>
                     </div>
                 </section>
 
                 <!-- BEN -->
                 <section>
-                    <h2 class="title">Audience</h2>
+                    <h2 class="title">Classification</h2>
+                    <h3 class="subtitle">Audience</h3>
                     <ul class="custom-list">
                         <li><i class="fas fa-child text-indigo-500 mr-3"></i> Pupils</li>
                         <li><i class="fas fa-user-graduate text-indigo-500 mr-3"></i> Students</li>
                         <li><i class="fas fa-keyboard text-indigo-500 mr-3"></i> Programmers</li>
                     </ul>
-                </section>
-
-                <section>
-                    <h2 class="title">Methodology </h2>
-                    <h3 class="subtitle">Systematic litterature review (SLR)</h3>
-                    <ol class="custom-list">
-                        <!-- THIB -->
-                        <li><span>Research question</span></li>
-                        <!-- Nous sommes partis de plusieurs questions pour finalement choisir celle-ci, càd "Quels sont les différentes focon de représenter les paradigmes de programmation dans la litterature au cours du temps". Elle nous semble intéressante car nous n'avons pas trouvé de publications proposant notre approche. -->
-                        <li><span>Keywords</span></li>
-                        <!-- Nous avons déterminé quelques keywords en partant de nos connaissance, càd l'outil de programmation visuelle Scratch et les langages de programmations spécifiques à un domaine. -->
-                        <li><span>Inclusion & Exclusion criteria</span></li>
-                        <!-- Inclusion: Par exemple, est-ce que l'article propose un environnement visuel de programmation, un système de réprésentation graphique, un système de représentation animée de l'exécution du code d'un programme. -->
-                        <!-- Exclusion: Est-ce que l'article seulement un abstract, s'il est écrit dans une autre langue que l'anglais, s'il ne fait que discuter de l'efficacité de l'utilisation des représentation graphiques dans l'apprentissage de la programmation.-->
-
-
-                        <!-- BEN -->
-                        <li><span>Query search engines</span></li>
-                        <!-- 
-                            Search Engines:
-                                - ieeexplore
-                                - springer
-                                - sciencedirect
-                                - researchgate
-                                - ACM
-                                - Google Scholar
-                        -->
-                        <!-- Recherche préliminaire pour mieux comprendre le sujet -->
-                        <!-- On a fait une première lecture partielle de ces articles -->
-                        <!-- Nouveaux mots-clé -->
-                        <!-- Recherche grandeur nature -->
-                        <li><span>Back & forward tracking</span></li>
-                        <!-- On est parti des articles trouvés durant les recherches par mots-clés -->
-                        <!-- Trouver les citations et références de ces articles -->
-                        <li><span>Articles relevance & classification</span></li>
-                        <!-- En fonction de nos critères, nous n'avons gardé que les meilleurs articles. Ensuite nous les avons classés en fonction des paradigmes de programmation qu'ils illustrent ou des systèmes de représentation de programmes utilisés -->
-                    </ol>
-                </section>
-
-                <!-- THIB -->
-                <section class="container h-full mx-auto">
-                    <h2 class="title">Custom bibliography management tool</h2>
-                    <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Cet outil est une application web qui permet de manipuler une base de données. Il permet d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Il nous permet aussi de stocker les pdfs des articles et d'exporter notre bibliographie au format bibtex. Avoir le controlle sur les données des articles nous a parmis de faire quelques statistiques et des graphiques. -->
-                    <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
                 </section>
 
                 <!-- BEN -->
@@ -377,6 +538,12 @@
                     </div>
                 </section>
 
+                <!-- THIB -->
+                <section class="container h-full mx-auto">
+                    <h2 class="title">Custom bibliography management tool</h2>
+                    <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Cet outil est une application web qui permet de manipuler une base de données. Il permet d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Il nous permet aussi de stocker les pdfs des articles et d'exporter notre bibliographie au format bibtex. Avoir le controlle sur les données des articles nous a parmis de faire quelques statistiques et des graphiques. -->
+                    <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
+                </section>
 
                 
                 <!-- BEN -->
@@ -387,7 +554,10 @@
                     </div>
                 </section>
                 
-                
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                </section>
+
                 <!-- THIB -->
                 <section>
                     <h2 class="title">Visual Programming</h2>
@@ -462,7 +632,10 @@
                 </section>
 
 
-                
+                <section>
+                    <h2 class="title">Static Visualization</h2>
+                </section>
+
                 <!-- BEN -->
                 <section>
                     <h2 class="title">Static Visualization</h2>
@@ -481,14 +654,14 @@
                     </div>
                 </section>
 
-                <section>
+                <!-- <section>
                     <h2 class="title">Static Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/pointers.jpg">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/pointers.jpg"> -->
                         <!-- Insertion d'un nouvel élément dans une liste ordonnée -->
-                        <sub class="mt-10">(1993) Active templates: Manipulating pointers with pictures </sub>
+                        <!-- <sub class="mt-10">(1993) Active templates: Manipulating pointers with pictures </sub>
                     </div>
-                </section>
+                </section> -->
 
                 <section>
                     <h2 class="title">Static Visualization</h2>
@@ -501,6 +674,10 @@
                                 
 
 
+
+                <section>
+                    <h2 class="title">Dynamic Visualization</h2>
+                </section>
 
                 <!-- BEN -->
                 <!-- animation interactivite -->
@@ -564,12 +741,12 @@
                         <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-2xl">Flow Charts, Visual block based langages</div>
                     </div>
                     <div class="flex w-3/5 mx-auto py-8 border-b-2 border-gray-500 text-left">
-                        <div class="w-1/3 text-3xl italic text-indigo-700 font-bold">Functionnal</div>
+                        <div class="w-1/3 text-3xl italic text-indigo-700 font-bold">Functional</div>
                         <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-2xl">Data flow diagrams, Visual block based langages</div>
                     </div>
                     <div class="flex w-3/5 mx-auto py-8 border-b-2 border-gray-500 text-left">
                         <div class="w-1/3 text-3xl italic text-indigo-700 font-bold">Logical</div>
-                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-2xl">Decision three, Venn / Euler diagram</div>
+                        <div class="pl-5 pt-1 w-2/3 text-bold text-gray-700 text-2xl">Decision tree, Venn / Euler diagram</div>
                     </div>
                     <div class="flex w-3/5 mx-auto py-8 border-b-2 border-gray-500 text-left">
                         <div class="w-1/3 text-3xl italic text-indigo-700 font-bold">Object Oriented</div>
@@ -630,12 +807,12 @@
                         <!-- On était limité par nos connaissances, on ferait beaucoup si c'était à refaire -->
                         <li>Lack of logical operators in queries</li>
                         <!-- On a pas personnellement l'habitude de les utiliser -->
-                        <li>Expand to more programming paradigms</li>
+                        <!-- <li>Expand to more programming paradigms</li> -->
                         <!-- Parralel, Programmation événementielle,  -->
-                        <li>Analyse more tools</li>
+                        <!-- <li>Analyse more tools</li> -->
                         <li>Highlighting key tools features</li>
                         <!-- On a fait le choix de rester dans l'overview -->
-                        <li>Grey literature</li>
+                        <!-- <li>Grey literature</li> -->
                         <!-- Pour trouver plus de serious games -->
                     </ul>
                 </section>
@@ -664,6 +841,7 @@
             Reveal.initialize({
                 hash: true,
                 disableLayout: true,
+                slideNumber: true,
 
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

@@ -14,6 +14,16 @@ html { font-family: 'Inter', sans-serif; }
     @apply bg-indigo-700 h-2
 }
 
+.reveal .slide-number {
+    @apply bg-indigo-400 rounded-md text-3xl p-2;
+    right: 20px !important;
+    bottom: 20px !important;
+}
+
+.controls {
+    right: 90px !important;
+}
+
 .reveal .controls button {
     @apply text-indigo-700
 }
@@ -77,6 +87,10 @@ pre > code {
 
 .vh-70 {
     height: 70vh;
+}
+
+.biffer {
+    text-decoration: line-through;
 }
 
 .bg-transparent {
