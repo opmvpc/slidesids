@@ -439,20 +439,14 @@
                 </section>
 				
 				<section>
-                    <h2 class="title">Snowballing</h2>
-                    <!-- 
+                    <h2 class="title">Relevance and classification</h2>
+					<!-- 
 					Avec la définition de notre question de recherche,
 					de nos keywords,
 					de nos critères
 					et d'un petit groupe d'articles
-				    nous avons commencer le snowballing. 
-					ie : suivre les références (avant arrière) des premiers articles pertinents et sélectionner ceux qui au premier abord
-					(à la lecture de l'abstract) semblait correspondre à notre recherche. Pour avoir une vue d'ensemble et ensuite élaguer .
+				    nous avons commencer le snowballing Pour avoir une vue d'ensemble du domaine et une base d'articles étendue.
 					-->
-                </section>
-				
-				<section>
-                    <h2 class="title">Relevance and classification</h2>
                     <!-- 
 					Par la suite nous avons pu réévaluer notre base d’articles sur base d’une lecture approfondie 
 					et de classer les articles trouvés notamment par pertinence.
@@ -489,6 +483,7 @@
                     <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
                     <ul class="custom-list">
                         <li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
+						<li><i class="fas fa-gamepad text-indigo-500 mr-3"></i> Serious game</li>
                         <li><i class="fas fa-project-diagram text-indigo-500 mr-3"></i> Static Visualisation</li>
                         <li><i class="fas fa-film text-indigo-500 mr-3"></i> Dynamic Visualisation</li>
                     </ul>
@@ -540,14 +535,14 @@
                 <!-- BEN -->
                 <section>
                     <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification</h2>
+                        <h2 class="title">Classification results</h2>
                         <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByRelevance.jpg">
                     </div>
                 </section>
 
                 <section>
                     <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification</h2>
+                        <h2 class="title">Classification results</h2>
                         <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
                         <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
                             <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
@@ -556,23 +551,40 @@
 
                 <section>
                     <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification</h2>
+                        <h2 class="title">Classification results</h2>
                         <img class=" vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
                     </div>
                 </section>
 
                 <section>
                     <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification</h2>
+                        <h2 class="title">Classification results</h2>
                         <img class=" vh-70 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
                     </div>
                 </section>
 
-
+				<section>
+                    <h2 class="title">Timeline</h2>
+                    <div class="r-stack p-4">
+                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
+                        <!-- Imperative most represented -->
+                        <!-- Object Oriented was trendy in the 90's -->
+                        <!-- Logical programming was trendy in the late 80's -->
+                        <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
+                        <!-- Static visual programs representations still studied today
+                        Performance concerns seem to be largely resolved since the 90's
+                        Visual programming has regain some interest lately
+                        Serious games are a relatively new trend
+                        Increasingly frequent use of web technologies -->
+                    </div>
+                </section>
 
                 
                 <!-- BEN -->
                 <section class="container h-full mx-auto">
+				<!-- Nous avons également répertorié quelques outils que nous avons classé selon les même catégories
+					Nous allons vous en présenter quelques uns.
+				-->
                     <h2 class="title">Tools</h2>
                     <div class="flex items-center justify-center">
                         <img class="vh-80 shadow-xl rounded-lg" src="images/tools.jpg">
@@ -639,10 +651,10 @@
 
                 <section>
                     <h2 class="title">Visual Programming</h2>
+					<!-- representation avec des diagrammes de classes uml et flow chart--> 
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/snapBlockEditor.jpg">
-                        <sub class="mt-10">(2016) Snap! (build your own blocks)</sub>
-                        <!-- C'est une réimplémentation de scratch qui ajoute la possibilité d'ajouter soi meme des nouveaux blocs à l'éditeur -->
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/raptorMethodEdition.jpg">
+                        <sub class="mt-10">(2009) Raptor: A visual programming environment for teaching object-oriented programming</sub>
                     </div>
                 </section>
 
@@ -697,66 +709,65 @@
                     </div>
                 </section>
                                 
-
+				<section>
+                    <h2 class="title">Static Visualization</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="w-1/2 shadow-xl rounded-lg" src="images/viper.png">
+                        <!-- Représentation OO -->
+                        <sub class="mt-10">(1999) The Design of a Completely Visual Object-Oriented Programming Language</sub>
+                    </div>
+                </section>
 
 
                 <section>
                     <h2 class="title">Dynamic Visualization</h2>
                 </section>
 
+				<section>
+                    <h2 class="title">Dynamic Visualization</h2>
+					<!-- Langage 1971 qui introduit le turtle graphics. Déposé le crayon pour dessiner.-->					
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/logo.png">
+                        <sub class="mt-10">(1971) The Logo programming language </sub>
+                    </div>
+                </section>
                 <!-- BEN -->
                 <!-- animation interactivite -->
                 <!-- variables -->
                 <section>
                     <h2 class="title">Dynamic Visualization</h2>
+					<!-- execution de la trace du programme basé sur le code est une approche différente-->
+					<!-- On peut également executer des instruction dans le texte -->					
                     <div class="flex flex-col items-center justify-center">
                         <img class="vh-70 shadow-xl rounded-lg" src="images/PlanAni.jpg">
                         <sub class="mt-10">(2003) PlanAni: Program animation based on the roles of variables</sub>
                     </div>
                 </section>
 
-                <!-- in text -->
-                <!-- from exec -->
                 <section>
                     <h2 class="title">Dynamic Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/jeliot.jpg">
-                        <sub class="mt-10">(2003) Jeliot: Animation of user algorithms on the Web</sub>
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/3dpp.jpg">
+                        <sub class="mt-10">(2003) Execution visualization and debugging in three-dimensional visual programming</sub>
                     </div>
                 </section>
+                
 
                 <section>
-                    <h2 class="title">Dynamic Visualization</h2>
+                    <h2 class="title">Dynamic Visualization</h2
+					<!-- movie based frame by frame et webapp-->
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/leonardoPlayer.jpg">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/leonardoBuilder.jpg">
                         <sub class="mt-10">(2005) Visual editing of animated algorithms: the Leonardo Web builder</sub>
                     </div>
                 </section>
 
-                <section>
-                    <h2 class="title">Dynamic Visualization</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/raptorMethodEdition.jpg">
-                        <sub class="mt-10">(2009) Raptor: A visual programming environment for teaching object-oriented programming</sub>
-                    </div>
-                </section>
+                
+				
+				
                 
                 <!-- THIB -->
-                <section>
-                    <h2 class="title">Timeline</h2>
-                    <div class="r-stack p-4">
-                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
-                        <!-- Imperative most represented -->
-                        <!-- Object Oriented was trendy in the 90's -->
-                        <!-- Logical programming was trendy in the late 80's -->
-                        <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
-                        <!-- Static visual programs representations still studied today
-                        Performance concerns seem to be largely resolved since the 90's
-                        Visual programming has regain some interest lately
-                        Serious games are a relatively new trend
-                        Increasingly frequent use of web technologies -->
-                    </div>
-                </section>
+                
 
                 <!-- BEN -->
                 <section class="container w-full mx-auto">
@@ -793,8 +804,8 @@
                         <!-- Les mêmes systèmes de représentation sont souvent utilisés -->
                         <!-- ex: UML pour OO, decision threes pour Logique -->
                         <!-- Ces représentations ne sont sans doute pas adaptées aux débutants, besoin d'apprendre à lire les diagrammes d'abord -->
-                        <li>Lack of multi-textual langages and multi-paradigm tools</li>
-                        <li>No visual tools to teach testing</li>
+                        <li>Lack of multi-languages and multi-paradigm tools</li>
+                        <li>No visual tools for testing</li>
                     </ul>
                 </section>
 
@@ -823,23 +834,27 @@
 
                 <!-- THIB -->
                 <section>
-                    <h2 class="title">Self-criticism</h2>
-                    <ul class="custom-list">
-                        <li>Better research methodology</li>
+                    <h2 class="title">Limitations</h2>
+					<h3 class="subtitle">Research methodology</h3>
+                    <ul class="custom-list mb-12">
                         <!-- S'inspirer des états de l'art bien réalisés qu'on a trouvé qu'à la fin -->
-                        <li>Better keywords definition</li>
+                        <li>Define better keywords</li>
                         <!-- on aurait pu mieux définir nos keywords. Après avoir lu et vu comment les autres articles les présente,... -->
                         <!-- On était limité par nos connaissances, on ferait beaucoup si c'était à refaire -->
-                        <li>Lack of logical operators in queries</li>
+                        <li>Use operators in queries</li>
                         <!-- On a pas personnellement l'habitude de les utiliser -->
                         <!-- <li>Expand to more programming paradigms</li> -->
                         <!-- Parralel, Programmation événementielle,  -->
                         <!-- <li>Analyse more tools</li> -->
-                        <li>Highlighting key tools features</li>
+                        
                         <!-- On a fait le choix de rester dans l'overview -->
                         <!-- <li>Grey literature</li> -->
                         <!-- Pour trouver plus de serious games -->
                     </ul>
+					<h3 class="subtitle">Tools analysis</h3>
+					<ul class="custom-list">
+					<li>Highlight key tools features</li>
+					</ul>
                 </section>
 
                 <!-- BEN -->
