@@ -439,18 +439,6 @@
 				
 				<section>
                     <h2 class="title">Relevance and classification</h2>
-					<!-- 
-					Avec la définition de notre question de recherche,
-					de nos keywords,
-					de nos critères
-					et d'un petit groupe d'articles
-				    nous avons commencer le snowballing Pour avoir une vue d'ensemble du domaine et une base d'articles étendue.
-					-->
-                    <!-- 
-					Par la suite nous avons pu réévaluer notre base d’articles sur base d’une lecture approfondie 
-					et de classer les articles trouvés notamment par pertinence.
-					Nous avons également classé les articles par date de parution et par paradigme de programmation.
-					-->
                 </section>
 				
 				<!-- THIB -->
@@ -458,6 +446,23 @@
                     <h2 class="title">Custom bibliography management tool</h2>
                     <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Cet outil est une application web qui permet de manipuler une base de données. Il permet d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Il nous permet aussi de stocker les pdfs des articles et d'exporter notre bibliographie au format bibtex. Avoir le controlle sur les données des articles nous a parmis de faire quelques statistiques et des graphiques. -->
                     <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
+                </section>
+
+                <!-- BEN -->
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification results</h2>
+                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByRelevance.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification results</h2>
+                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
+                        <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
+                            <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
+                    </div>
                 </section>
 				
                 <!-- THIB -->
@@ -474,6 +479,19 @@
                     </ul>
                 </section>
 
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Classification results</h2>
+                        <img class=" vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex flex-col items-center justify-center">
+                        <h2 class="title">Timeline</h2>
+                        <img class="vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
+                    </div>
+                </section>
 
                 <!-- BEN -->
                 <section>
@@ -481,11 +499,27 @@
                     <h3 class="subtitle">Programs representation systems</h3>
                     <!-- La literature distingue Visualization of programs et Visual programming qu'il ne faut pas confondre!  -->
                     <ul class="custom-list">
-                        <li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
-						<li><i class="fas fa-gamepad text-indigo-500 mr-3"></i> Serious game</li>
                         <li><i class="fas fa-project-diagram text-indigo-500 mr-3"></i> Static Visualisation</li>
                         <li><i class="fas fa-film text-indigo-500 mr-3"></i> Dynamic Visualisation</li>
+                        <li><i class="fas fa-mouse text-indigo-500 mr-3"></i> Visual programming</li>
+						<li><i class="fas fa-gamepad text-indigo-500 mr-3"></i> Serious game</li>
                     </ul>
+                </section>
+
+                <section>
+                    <h2 class="title">Static Visualisation</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="shadow-xl rounded-lg" src="images/monads.png">
+                        <sub class="mt-10">Visual Support for Learning Monads</sub>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Dynamic Visualisation</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/animation.jpg">
+                        <sub class="mt-10">JAVASCRIPT LIBRARY FOR DEVELOPING INTERACTIVE MICRO-LEVEL ANIMATIONS FORTEACHING AND LEARNING ALGORITHMS ON ONE-DIMENSIONAL ARRAYS</sub>
+                    </div>
                 </section>
 
                 <section>
@@ -505,21 +539,19 @@
                 </section>
 
                 <section>
-                    <h2 class="title">Static Visualisation</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="shadow-xl rounded-lg" src="images/monads.png">
-                        <sub class="mt-10">Visual Support for Learning Monads</sub>
+                        <h2 class="title">Classification results</h2>
+                        <img class=" vh-70 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
                     </div>
                 </section>
-
+                
                 <section>
-                    <h2 class="title">Dynamic Visualisation</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/animation.jpg">
-                        <sub class="mt-10">JAVASCRIPT LIBRARY FOR DEVELOPING INTERACTIVE MICRO-LEVEL ANIMATIONS FORTEACHING AND LEARNING ALGORITHMS ON ONE-DIMENSIONAL ARRAYS</sub>
+                        <h2 class="title">Timeline</h2>
+                        <img class=" vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
                     </div>
                 </section>
-
+                
                 <!-- BEN -->
                 <section>
                     <h2 class="title">Classification</h2>
@@ -532,54 +564,6 @@
                 </section>
 
                 <!-- BEN -->
-                <section>
-                    <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification results</h2>
-                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByRelevance.jpg">
-                    </div>
-                </section>
-
-                <section>
-                    <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification results</h2>
-                        <img class="vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
-                        <!-- Graphe des citations. Les premiers articles que nous avons trouvés sont dans le cluster "visual block based programming langages". C'est sans doute parceque nos premiers mots-clé faisaient référence à Scratch -->
-                            <!-- On voit le chemin parcouru lors de l'étape du back/forward tracking. Certains articles non pertinents peuvent mener à des articles pertinents. -->
-                    </div>
-                </section>
-
-                <section>
-                    <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification results</h2>
-                        <img class=" vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByParadigms.jpg">
-                    </div>
-                </section>
-
-                <section>
-                    <div class="flex flex-col items-center justify-center">
-                        <h2 class="title">Classification results</h2>
-                        <img class=" vh-70 shadow-xl rounded-lg" src="images/countArticlesByCategories.jpg">
-                    </div>
-                </section>
-
-				<section>
-                    <h2 class="title">Timeline</h2>
-                    <div class="r-stack p-4">
-                        <img class="fragment fade-out vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
-                        <!-- Imperative most represented -->
-                        <!-- Object Oriented was trendy in the 90's -->
-                        <!-- Logical programming was trendy in the late 80's -->
-                        <img class="fragment current-visible vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
-                        <!-- Static visual programs representations still studied today
-                        Performance concerns seem to be largely resolved since the 90's
-                        Visual programming has regain some interest lately
-                        Serious games are a relatively new trend
-                        Increasingly frequent use of web technologies -->
-                    </div>
-                </section>
-
-                
-                <!-- BEN -->
                 <section class="container h-full mx-auto">
 				<!-- Nous avons également répertorié quelques outils que nous avons classé selon les même catégories
 					Nous allons vous en présenter quelques uns.
@@ -590,84 +574,6 @@
                     </div>
                 </section>
                 
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                </section>
-
-                <!-- THIB -->
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/showandtell.jpg">
-                        <sub class="mt-10">(1985) Show and Tell: A visual language for keyboardless programming</sub>
-                        <!-- Show and tell permet de créer des programmes avec un éditeur visuel. Il s'appuie sur les diagrammes de flux de données pour représenter les paradigmes de programmation impérative et concurrente.
-                        Ici calcul d'interet pour de l'argent placé sur un compte en banque
-                        Tous les publics -->
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/visavis.jpg">
-                        <sub class="mt-10">(1993) VisaVis: a higher-order functional visual programming language</sub>
-                        <!-- VisaVis est un outil destiné à la programmation fonctionnelle. Il offre un éditeur graphique s'appuyant lui aussi sur les diagrammes de flux de données. -->
-                        <!-- Ici exemple d'implémentation du tri rapide -->
-                        <!-- Enfants et étudiants -->
-                    </div>
-                </section>
-
-                <!-- UML like -->
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/sfcUI.jpg">
-                        <sub class="mt-10">(1996) The SFC editor a graphical tool for algorithm development</sub>
-                        <!-- Permet d'écrire des programmmes visuellement sous forme de flow charts. Du code C est généré sur base de ceux-ci -->
-                        <!-- Exemple ici de l'implémentation d'un algorithme d'insertion dans une liste chainée -->
-                        <!-- Tous les publics -->
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/logoBlock.jpg">
-                        <sub class="mt-10">(1996) LogoBlocks: A graphical programming language for interacting with the world</sub>
-                        <!-- logoBlock est le premier langage visuel à base de blocs. Les blocs ont des formes différentes en focntion de leur type (variable, fonction, itération) et des connecteurs qui permette de contrainte l'assemblage de certains blocks avec d'autres blocs. -->
-                        <!-- Destiné aux enfants -->
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/scratchUI.jpg">
-                        <sub class="mt-10">(2006) The scratch programming language and environment</sub>
-                        <!-- Scratch offre un langage a base de block qui permet de créer des scènes animées ou même des jeux. Il est principalement utilisé pour apprendre la programmation aux enfants et aux étudiants -->
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-					<!-- representation avec des diagrammes de classes uml et flow chart--> 
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/raptorMethodEdition.jpg">
-                        <sub class="mt-10">(2009) Raptor: A visual programming environment for teaching object-oriented programming</sub>
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Visual Programming</h2>
-                    <div class="flex flex-col items-center justify-center">
-                        <img class="vh-70 shadow-xl rounded-lg" src="images/trikstrudio.jpg">
-                        <sub class="mt-10">(2017) TRIK studio: Technical introduction</sub>
-                        <!-- Trik studio permet de programmer des robots à l'aide d'un langage de programmation visuel ou textuel. Il est adapté à l'apprentissage de la programmation concurrente. Il fourni aussi un environment de simulation de robots. -->
-                        <!-- Étudiants et programmeurs -->
-                    </div>
-                </section>
-
-
                 <section>
                     <h2 class="title">Static Visualization</h2>
                 </section>
@@ -761,10 +667,83 @@
                     </div>
                 </section>
 
-                
-				
-				
-                
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                </section>
+
+                <!-- THIB -->
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/showandtell.jpg">
+                        <sub class="mt-10">(1985) Show and Tell: A visual language for keyboardless programming</sub>
+                        <!-- Show and tell permet de créer des programmes avec un éditeur visuel. Il s'appuie sur les diagrammes de flux de données pour représenter les paradigmes de programmation impérative et concurrente.
+                        Ici calcul d'interet pour de l'argent placé sur un compte en banque
+                        Tous les publics -->
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/visavis.jpg">
+                        <sub class="mt-10">(1993) VisaVis: a higher-order functional visual programming language</sub>
+                        <!-- VisaVis est un outil destiné à la programmation fonctionnelle. Il offre un éditeur graphique s'appuyant lui aussi sur les diagrammes de flux de données. -->
+                        <!-- Ici exemple d'implémentation du tri rapide -->
+                        <!-- Enfants et étudiants -->
+                    </div>
+                </section>
+
+                <!-- UML like -->
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/sfcUI.jpg">
+                        <sub class="mt-10">(1996) The SFC editor a graphical tool for algorithm development</sub>
+                        <!-- Permet d'écrire des programmmes visuellement sous forme de flow charts. Du code C est généré sur base de ceux-ci -->
+                        <!-- Exemple ici de l'implémentation d'un algorithme d'insertion dans une liste chainée -->
+                        <!-- Tous les publics -->
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/logoBlock.jpg">
+                        <sub class="mt-10">(1996) LogoBlocks: A graphical programming language for interacting with the world</sub>
+                        <!-- logoBlock est le premier langage visuel à base de blocs. Les blocs ont des formes différentes en focntion de leur type (variable, fonction, itération) et des connecteurs qui permette de contrainte l'assemblage de certains blocks avec d'autres blocs. -->
+                        <!-- Destiné aux enfants -->
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/scratchUI.jpg">
+                        <sub class="mt-10">(2006) The scratch programming language and environment</sub>
+                        <!-- Scratch offre un langage a base de block qui permet de créer des scènes animées ou même des jeux. Il est principalement utilisé pour apprendre la programmation aux enfants et aux étudiants -->
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+					<!-- representation avec des diagrammes de classes uml et flow chart--> 
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/raptorMethodEdition.jpg">
+                        <sub class="mt-10">(2009) Raptor: A visual programming environment for teaching object-oriented programming</sub>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="title">Visual Programming</h2>
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="vh-70 shadow-xl rounded-lg" src="images/trikstrudio.jpg">
+                        <sub class="mt-10">(2017) TRIK studio: Technical introduction</sub>
+                        <!-- Trik studio permet de programmer des robots à l'aide d'un langage de programmation visuel ou textuel. Il est adapté à l'apprentissage de la programmation concurrente. Il fourni aussi un environment de simulation de robots. -->
+                        <!-- Étudiants et programmeurs -->
+                    </div>
+                </section>
+
                 <!-- THIB -->
                 
 
