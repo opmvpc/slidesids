@@ -16774,7 +16774,8 @@ section {
   color: #4a5568;
   color: rgba(74, 85, 104, var(--text-opacity));
   font-weight: 700;
-  margin-bottom: 1.25rem
+  margin-bottom: 1.25rem;
+  text-transform: capitalize
 }
 
 .subtitle {
