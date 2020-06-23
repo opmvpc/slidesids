@@ -36,8 +36,12 @@ h2 {
     @apply text-5xl leading-relaxed
 }
 
+h2.title {
+    @apply text-6xl leading-relaxed;
+}
+
 h3 {
-    @apply text-4xl
+    @apply text-5xl
 }
 
 h4 {
@@ -65,7 +69,7 @@ section {
 }
 
 sub {
-    @apply text-xl font-bold text-indigo-700
+    @apply text-2xl font-bold text-indigo-700
 }
 
 sub > span.ref {
@@ -79,6 +83,10 @@ pre {
 pre > code {
     @apply shadow-xl rounded-lg text-left;
     padding: 2rem !important;
+}
+
+.vh-90 {
+    height: 88vh;
 }
 
 .vh-80 {
@@ -115,7 +123,7 @@ pre > code {
 }
 
 ul.custom-list {
-    @apply flex flex-col
+    @apply flex flex-col mt-10
 }
 
 ul.custom-list > li {
@@ -124,7 +132,7 @@ ul.custom-list > li {
 }
 
 ol.custom-list {
-    @apply flex flex-col list-decimal;
+    @apply flex flex-col list-decimal mt-10;
     list-style: none;
     counter-reset: custom-counter;
 }
