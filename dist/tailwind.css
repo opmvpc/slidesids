@@ -16738,8 +16738,13 @@ h2 {
   line-height: 1.625
 }
 
+h2.title {
+  font-size: 4rem;
+  line-height: 1.625;
+}
+
 h3 {
-  font-size: 2.25rem
+  font-size: 3rem
 }
 
 h4 {
@@ -16781,7 +16786,7 @@ section {
 }
 
 sub {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   --text-opacity: 1;
   color: #4c51bf;
@@ -16808,6 +16813,10 @@ pre > code {
   border-radius: 0.5rem;
   text-align: left;
   padding: 2rem !important;
+}
+
+.vh-90 {
+  height: 88vh;
 }
 
 .vh-80 {
@@ -16845,7 +16854,8 @@ pre > code {
 
 ul.custom-list {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin-top: 2.5rem
 }
 
 ul.custom-list > li {
@@ -16873,6 +16883,7 @@ ol.custom-list {
   display: flex;
   flex-direction: column;
   list-style-type: decimal;
+  margin-top: 2.5rem;
   list-style: none;
   counter-reset: custom-counter;
 }

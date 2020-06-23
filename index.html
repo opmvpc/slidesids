@@ -442,10 +442,11 @@
                 </section>
 				
 				<!-- THIB -->
-                <section class="container h-full mx-auto">
+                <section class="">
                     <h2 class="title">Custom bibliography management tool</h2>
                     <!-- Pour nous aider dans ces taches, nous avons dévelopé un outil de gestion bibliographique. Cet outil est une application web qui permet de manipuler une base de données. Il permet d'encoder les articles, les liens qui existent entre eux (références, citations) et de les catégoriser. Il nous permet aussi de stocker les pdfs des articles et d'exporter notre bibliographie au format bibtex. Avoir le controlle sur les données des articles nous a parmis de faire quelques statistiques et des graphiques. -->
-                    <iframe class="w-full shadow-xl bg-white rounded-lg vh-80" data-src="https://ids.tsix.be" data-preload></iframe>
+                    <iframe class="w-3/4 mx-auto shadow-xl bg-white rounded-lg vh-80 mb-8" data-src="https://ids.tsix.be" data-preload></iframe>
+                    <sub><a href="https://ids.tsix.be" class="underline">https://ids.tsix.be</a></sub>
                 </section>
 
                 <!-- BEN -->
@@ -459,8 +460,7 @@
                 <section>
                     <div class="flex flex-col items-center justify-center">
                         <h2 class="title">Classification results</h2>
-                        <h3 class="subtitle">Citation graph</h3>
-                        <img class=" mt-10 vh-70 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
+                        <img class="vh-90 shadow-xl rounded-lg" data-fragment-index="0" src="images/citations_clusters.png">
                     </div>
                 </section>
 				
@@ -488,7 +488,30 @@
                 <section>
                     <div class="flex flex-col items-center justify-center">
                         <h2 class="title">Timeline</h2>
-                        <img class="vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndParadigms.jpg">
+                        <h3 class="subtitle">Articles count by years and programming paradigms
+                        </h3>
+                        <div class="grid grid-cols-3 gap-12 w-full px-12">
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndParadigms1.jpg">
+                                <sub class="block mt-5 text-blue-700">Imperative programming</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndParadigms2.jpg">
+                                <sub class="block mt-5 text-orange-600">Functional programming</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndParadigms3.jpg">
+                                <sub class="block mt-5 text-gray-600">Logical programming</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndParadigms4.jpg">
+                                <sub class="block mt-5 text-yellow-600">Object oriented programming</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndParadigms5.jpg">
+                                <sub class="block mt-5 text-blue-500">Concurrent programming</sub>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -547,7 +570,28 @@
                 <section>
                     <div class="flex flex-col items-center justify-center">
                         <h2 class="title">Timeline</h2>
-                        <img class=" vh-80 shadow-xl rounded-lg" data-fragment-index="0" src="images/countArticlesByYearsAndCategories.jpg">
+                        <h3 class="subtitle">Articles count by years and programs representation systems
+                        </h3>
+                        <div class="grid grid-cols-2 gap-12 w-4/5">
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndCategories2.jpg">
+                                <sub class="block mt-5 text-gray-600">Static visualization</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndCategories1.jpg">
+                                <sub class="block mt-5 text-blue-700">Visual programming</sub>
+                            </div>
+                        <!-- </div>
+                        <div class="flex justify-center"> -->
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndCategories3.jpg">
+                                <sub class="block mt-5 text-yellow-600">Dynamic visualization</sub>
+                            </div>
+                            <div class="">
+                                <img class="mx-auto shadow-xl rounded-lg" style="height: 100%;" src="images/countArticlesByYearsAndCategories4.jpg">
+                                <sub class="block mt-5 text-orange-600">Serious games</sub>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 
@@ -607,7 +651,7 @@
                 <section>
                     <h2 class="title">Static Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="w-1/2 shadow-xl rounded-lg" src="images/sceneDiagram.jpg">
+                        <img class="w-2/3 shadow-xl rounded-lg" src="images/sceneDiagram.jpg">
                         <!-- Utilisation de séquence UML pour représenter les programmes OO -->
                         <sub class="mt-10">(1996) Scene: Using Scenario Diagrams and Active Text for Illustrating Object-Oriented Programs </sub>
                     </div>
@@ -616,7 +660,7 @@
 				<section>
                     <h2 class="title">Static Visualization</h2>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="w-1/2 shadow-xl rounded-lg" src="images/viper.png">
+                        <img class="w-2/3 shadow-xl rounded-lg" src="images/viper.png">
                         <!-- Représentation OO -->
                         <sub class="mt-10">(1999) The Design of a Completely Visual Object-Oriented Programming Language</sub>
                     </div>
